@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shehroz - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #f5f7fa;
+            color: #1a1a1a;
+        }
+        header {
+            background: #0a2342;
+            color: white;
+            padding: 25px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin-left: 25px;
+            font-weight: 500;
+        }
+        .hero {
+            padding: 120px 60px;
+            background: linear-gradient(135deg, #0a2342, #0d3269);
+            color: white;
+            text-align:center;
+        }
+        .hero h2 {
+            font-size: 48px;
+            margin: 10px 0;
+        }
+        .hero p {
+            font-size: 20px;
+            width: 60%;
+            margin: 0 auto;
+        }
+        .section {
+            padding: 80px 60px;
+        }
+        .title {
+            font-size: 32px;
+            margin-bottom: 40px;
+            font-weight: 700;
+            color: #0a2342;
+        }
+        .skills, .projects, .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-6px);
+        }
+        footer {
+            background: #0a2342;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 28px;
+            background: #ffb703;
+            color: #0a2342;
+            font-weight: 600;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+        .fade-in {opacity:0;transform:translateY(20px);animation:fadeIn 1s forwards;}
+        @keyframes fadeIn {to {opacity:1;transform:translateY(0);}}
+        .dark {background:#0d1117;color:#f0f6fc;}
+        .dark header{background:#161b22;}
+        .dark .card{background:#1f242d;color:white;}
+        .profile-img{width:160px;height:160px;border-radius:50%;object-fit:cover;border:4px solid #ffb703;}
+        .nav-anim a{transition:0.3s;}
+        .nav-anim a:hover{color:#ffb703;transform:translateY(-3px);}
+        footer .social a{color:white;margin:0 10px;font-size:24px;transition:0.3s;}
+        footer .social a:hover {transform:translateY(-4px);}
+        footer .social a.facebook:hover {color:#1877f2;}
+        footer .social a.instagram:hover {color:#e1306c;}
+        footer .social a.linkedin:hover {color:#0077b5;}
+        footer .social a.fiverr:hover {color:#1dbf73;}
+        @media(max-width:768px){header{padding:20px;} .hero p{width:100%;}}
+    </style>
+<script>
+function toggleDark(){document.body.classList.toggle('dark');}
+</script>
+</head>
+<body>
+
+<header class="nav-anim">
+    <h1>Shehroz</h1>
+    <nav>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero fade-in">
+    <img src="profile.jpg" alt="Profile" class="profile-img">
+    <h2>Hello, I'm <span style="color:#ffb703">Shehroz</span></h2>
+    <p>Electrical Engineering student with expertise in Machine Learning, Embedded Systems, and DSA. Passionate about solving real-world problems.</p>
+    <a href="resume.pdf" class="btn">Download Resume</a>
+</section>
+
+<section class="section" id="skills">
+    <div class="title">Skills</div>
+    <div class="skills">
+        <div class="card">Electrical Engineering</div>
+        <div class="card">Circuit Design</div>
+        <div class="card">Machine Learning (Python)</div>
+        <div class="card">DSA in C++</div>
+        <div class="card">Embedded Systems</div>
+        <div class="card">Web Development Basics</div>
+      <div class="card">linkedin optimization</div>
+    </div>
+</section>
+
+<section class="section" id="projects">
+    <div class="title">Projects</div>
+    <div class="projects">
+        <div class="card">
+            <h3>Smart Energy Meter</h3>
+            <p>An embedded system project with live monitoring.</p>
+        </div>
+        <div class="card">
+            <h3>ML Classifier</h3>
+            <p>Python-based project for classification tasks.</p>
+        </div>
+        <div class="card">
+            <h3>DSA Library in C++</h3>
+            <p>Custom implementation of DSA problems.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="services">
+    <div class="title">Services</div>
+    <div class="services">
+        <div class="card">Assignment Help (EE + CS)</div>
+        <div class="card">Portfolio Websites</div>
+        <div class="card">ML Model Development</div>
+        <div class="card">Circuit Designing</div>
+      <div class="card">linkedin optimization</div>
+      <div class="card">Simulation of Circuits</div>
+      <div class="card">Wordpress Web Development</div>
+    </div>
+</section>
+
+<section class="section" id="contact">
+    <div class="title">Contact</div>
+    <form action="https://formspree.io/f/mwkggkpn" method="POST" style="max-width:500px">
+        <label>Name</label>
+        <input type="text" name="name" required style="width:100%;padding:10px;margin:10px 0;">
+        <label>Email</label>
+        <input type="email" name="email" required style="width:100%;padding:10px;margin:10px 0;">
+        <label>Message</label>
+        <textarea name="message" rows="5" style="width:100%;padding:10px;margin:10px 0;"></textarea>
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <div class="social">
+        <a href="https://www.facebook.com/engr.shehrozakhter167" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/engr.shehrozakhter167/" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=muhammad-shehroz-akhter-52b82a324" class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.fiverr.com/s/P2Y6QEw" class="fiverr" target="_blank"><i class="fas fa-briefcase"></i></a>
+    </div>
+    <br>© 2025 Shehroz - All Rights Reserved
+    <br><button onclick="toggleDark()" class="btn" style="margin-top:20px;">Toggle Dark Mode</button>
+</footer>
+
+</body>
+</html>
