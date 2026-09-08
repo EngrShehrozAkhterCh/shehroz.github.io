@@ -1,136 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shehroz - Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Shehroz Akhter — Embedded Systems Engineer & Firmware Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body {margin:0;font-family:'Poppins',sans-serif;background:#f5f7fa;color:#1a1a1a;}
-        header{background:#0a2342;color:white;padding:25px 60px;display:flex;justify-content:space-between;align-items:center;}
-        header h1{margin:0;font-size:28px;font-weight:700;}
-        nav a{text-decoration:none;color:white;margin-left:25px;font-weight:500;}
-        .hero{padding:100px 20px;background:linear-gradient(135deg,#0a2342,#0d3269);color:white;text-align:center;}
-        .hero h2{font-size:48px;margin:10px 0;}
-        .hero p{font-size:20px;width:80%;max-width:700px;margin:0 auto 20px;}
-        .section{padding:80px 20px;}
-        .title{font-size:32px;margin-bottom:40px;font-weight:700;color:#0a2342;text-align:center;}
-        .skills,.projects,.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;}
-        .card{background:white;padding:25px;border-radius:12px;box-shadow:0 6px 16px rgba(0,0,0,0.1);transition:0.3s;}
-        .card:hover{transform:translateY(-6px);}
-        footer{background:#0a2342;color:white;padding:40px;text-align:center;}
-        .btn{display:inline-block;margin-top:20px;padding:12px 28px;background:#ffb703;color:#0a2342;font-weight:600;border-radius:8px;text-decoration:none;cursor:pointer;}
-        .fade-in{opacity:0;transform:translateY(20px);animation:fadeIn 1s forwards;}
-        @keyframes fadeIn{to{opacity:1;transform:translateY(0);}}
-        .dark{background:#0d1117;color:#f0f6fc;}
-        .dark header{background:#161b22;}
-        .dark .card{background:#1f242d;color:white;}
-        .profile-img{width:160px;max-width:30%;height:auto;border-radius:50%;object-fit:cover;border:4px solid #ffb703;margin-bottom:20px;}
-        .nav-anim a{transition:0.3s;}
-        .nav-anim a:hover{color:#ffb703;transform:translateY(-3px);}
-        footer .social a{color:white;margin:0 10px;font-size:24px;transition:0.3s;}
-        footer .social a:hover{transform:translateY(-4px);}
-        footer .social a.facebook:hover{color:#1877f2;}
-        footer .social a.instagram:hover{color:#e1306c;}
-        footer .social a.linkedin:hover{color:#0077b5;}
-        footer .social a.fiverr:hover{color:#1dbf73;}
-        form input,form textarea{width:100%;padding:12px;margin:10px 0;border-radius:6px;border:1px solid #ccc;box-sizing:border-box;}
-        form button{cursor:pointer;}
-        @media(max-width:768px){header{padding:20px;}.hero p{width:100%;}}
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #ffffff;
+            color: #111827;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+        .serif-heading {
+            font-family: 'Playfair Display', serif;
+        }
     </style>
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-<script>
-(function(){emailjs.init('6L3RgMIAXxltsWXCl');})();
-function sendEmail(e){
-    e.preventDefault();
-    emailjs.sendForm('service_ljuxtbq','template_in8hc3u',e.target)
-    .then(()=>{alert('Message Sent!');e.target.reset();},
-          (err)=>{alert('Error sending message. Please try again.');console.log(err);});
-}
-function toggleDark(){document.body.classList.toggle('dark');}
-</script>
 </head>
-<body>
-<header class="nav-anim">
-    <h1>Muhammad Shehroz Akhter</h1>
-    <nav>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
-<section class="hero fade-in">
-    <img src="profile.png" alt="Profile" class="profile-img">
-    <h2>Hello, I'm <span style="color:#ffb703">Shehroz</span></h2>
-    <p>Electrical Engineering student with expertise in Machine Learning, Embedded Systems, and DSA. Passionate about solving real-world problems.</p>
-    <a href="resume.pdf" class="btn">Download Resume</a>
-</section>
-<section class="section" id="skills">
-    <div class="title">Skills</div>
-    <div class="skills">
-        <div class="card">Electrical Engineering</div>
-        <div class="card">Circuit Design</div>
-        <div class="card">Machine Learning (Python)</div>
-        <div class="card">DSA in C++</div>
-        <div class="card">Embedded Systems</div>
-        <div class="card">Web Development Basics</div>
-        <div class="card">linkedin optimization</div>
-    </div>
-</section>
-<section class="section" id="projects">
-    <div class="title">Projects</div>
-    <div class="projects">
-        <div class="card">
-            <h3>Smart Energy Meter</h3>
-            <p>An embedded system project with live monitoring.</p>
+<body class="selection:bg-black selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="bg-black text-white font-bold px-3 py-2 rounded-lg text-sm tracking-wider">SA</div>
+                <div>
+                    <span class="font-bold text-gray-900 block text-sm sm:text-base">Muhammad Shehroz Akhter</span>
+                    <span class="text-xs text-emerald-600 flex items-center font-medium">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500 inline-block mr-1.5 animate-pulse"></span>
+                        Available for Opportunities
+                    </span>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-600">
+                <a href="#home" class="text-black border-b-2 border-black pb-1">Home</a>
+                <a href="#about" class="hover:text-black transition">About</a>
+                <a href="#skills" class="hover:text-black transition">Skills</a>
+                <a href="#projects" class="hover:text-black transition">Projects</a>
+                <a href="#contact" class="hover:text-black transition">Contact</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <a href="#contact" class="bg-black hover:bg-gray-800 text-white text-sm font-medium px-5 py-2.5 rounded-full transition shadow-sm">
+                    Let's Talk
+                </a>
+            </div>
         </div>
-        <div class="card">
-            <h3>ML Classifier</h3>
-            <p>Python-based project for classification tasks.</p>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="max-w-6xl mx-auto px-6 pt-16 pb-24">
+        <div class="inline-block bg-gray-50 border border-gray-200 rounded-full px-3.5 py-1.5 text-xs font-semibold text-gray-600 tracking-wide uppercase mb-6">
+            PORTFOLIO • 2026
         </div>
-        <div class="card">
-            <h3>DSA Library in C++</h3>
-            <p>Custom implementation of DSA problems.</p>
+        <h1 class="serif-heading text-5xl sm:text-7xl lg:text-8xl font-normal tracking-tight text-gray-900 leading-[1.05] mb-6">
+            Muhammad <br/><span class="font-serif italic font-light">Shehroz Akhter</span>
+        </h1>
+        <p class="text-xl sm:text-2xl font-medium text-blue-600 mb-6">
+            Embedded Systems & Firmware Engineer
+        </p>
+        <p class="text-gray-600 text-lg max-w-2xl leading-relaxed mb-10">
+            Designing robust hardware-software co-designs, custom PCBs, and high-performance microcontroller firmware to bridge the physical and digital world.
+        </p>
+        
+        <div class="flex flex-wrap items-center gap-4">
+            <a href="#projects" class="bg-gray-900 hover:bg-black text-white text-sm font-medium px-6 py-3.5 rounded-xl transition flex items-center space-x-2 shadow-sm">
+                <span>View Projects</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+            <a href="#contact" class="bg-white hover:bg-gray-50 text-gray-900 border border-gray-300 text-sm font-medium px-6 py-3.5 rounded-xl transition">
+                Contact Me
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="bg-white hover:bg-gray-50 text-gray-900 border border-gray-300 text-sm font-medium px-6 py-3.5 rounded-xl transition">
+                LinkedIn
+            </a>
         </div>
-    </div>
-</section>
-<section class="section" id="services">
-    <div class="title">Services</div>
-    <div class="services">
-        <div class="card">Assignment Help (EE + CS)</div>
-        <div class="card">Portfolio Websites</div>
-        <div class="card">ML Model Development</div>
-        <div class="card">Circuit Designing</div>
-        <div class="card">linkedin optimization</div>
-      <div class="card">Simulation of Circuits</div>
-      <div class="card">Wordpress Web Development</div>
-    </div>
-</section>
-<section class="section" id="contact">
-    <div class="title">Contact</div>
-    <form onsubmit="sendEmail(event)">
-        <label>Name</label>
-        <input type="text" name="name" required>
-        <label>Email</label>
-        <input type="email" name="email" required>
-        <label>Message</label>
-        <textarea name="message" rows="5" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-    </form>
-</section>
-<footer>
-    <div class="social">
-        <a href="https://www.facebook.com/engr.shehrozakhter167" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/engr.shehrozakhter167/" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=muhammad-shehroz-akhter-52b82a324" class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://www.fiverr.com/s/P2Y6QEw" class="fiverr" target="_blank"><i class="fas fa-briefcase"></i></a>
-    </div>
-    <br>© 2025 Shehroz - All Rights Reserved
-    <br><button onclick="toggleDark()" class="btn" style="margin-top:20px;">Toggle Dark Mode</button>
-</footer>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="max-w-6xl mx-auto px-6 py-20 border-t border-gray-100">
+        <h2 class="serif-heading text-3xl sm:text-4xl font-normal text-gray-900 mb-12">About Me</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white border border-gray-200/80 p-8 rounded-3xl shadow-sm hover:shadow-md transition">
+                <div class="w-16 h-16 rounded-full border-2 border-emerald-500 flex items-center justify-center text-emerald-600 mb-6">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 14l9-5-9-5-9 5 9 5z M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Electrical Engineering Student</h3>
+                <p class="text-sm font-semibold text-gray-500 mb-4">UET Lahore • 2024 - 2028</p>
+                <p class="text-gray-600 leading-relaxed">
+                    Pursuing a rigorous degree in Electrical Engineering at UET Lahore, building an ironclad foundation in circuit analysis, digital logic, and embedded microarchitectures.
+                </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white border border-gray-200/80 p-8 rounded-3xl shadow-sm hover:shadow-md transition">
+                <div class="w-16 h-16 rounded-full border-2 border-indigo-500 flex items-center justify-center text-indigo-600 mb-6">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Firmware & Hardware Dev</h3>
+                <p class="text-sm font-semibold text-gray-500 mb-4">Altium • Proteus • C/C++</p>
+                <p class="text-gray-600 leading-relaxed">
+                    Specializing in end-to-end hardware development, from schematic capture and double-sided PCB layout in Altium Designer to writing optimized bare-metal firmware.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="max-w-6xl mx-auto px-6 py-20 border-t border-gray-100">
+        <h2 class="serif-heading text-3xl sm:text-4xl font-normal text-gray-900 mb-10">Skills I Have and Experience With</h2>
+        
+        <div class="flex flex-wrap gap-3 mb-10">
+            <span class="bg-black text-white px-4 py-2 rounded-lg text-xs font-semibold">All</span>
+            <span class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-2 rounded-lg text-xs font-semibold cursor-pointer transition">Embedded & Firmware</span>
+            <span class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-2 rounded-lg text-xs font-semibold cursor-pointer transition">Hardware & PCB</span>
+            <span class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-2 rounded-lg text-xs font-semibold cursor-pointer transition">Tools</span>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            <!-- Skill item -->
+            <div class="bg-white border border-gray-200 p-5 rounded-2xl flex flex-col items-center text-center shadow-sm hover:border-gray-400 transition">
+                <span class="font-bold text-gray-900 mb-1">C / C++</span>
+                <span class="text-[10px] bg-blue-50 text-blue-600 font-semibold px-2 py-0.5 rounded">Firmware</span>
+            </div>
+            <div class="bg-white border border-gray-200 p-5 rounded-2xl flex flex-col items-center text-center shadow-sm hover:border-gray-400 transition">
+                <span class="font-bold text-gray-900 mb-1">Altium Designer</span>
+                <span class="text-[10px] bg-emerald-50 text-emerald-600 font-semibold px-2 py-0.5 rounded">PCB</span>
+            </div>
+            <div class="bg-white border border-gray-200 p-5 rounded-2xl flex flex-col items-center text-center shadow-sm hover:border-gray-400 transition">
+                <span class="font-bold text-gray-900 mb-1">Proteus</span>
+                <span class="text-[10px] bg-emerald-50 text-emerald-600 font-semibold px-2 py-0.5 rounded">Simulation</span>
+            </div>
+            <div class="bg-white border border-gray-200 p-5 rounded-2xl flex flex-col items-center text-center shadow-sm hover:border-gray-400 transition">
+                <span class="font-bold text-gray-900 mb-1">ESP32 / Arduino</span>
+                <span class="text-[10px] bg-blue-50 text-blue-600 font-semibold px-2 py-0.5 rounded">Microcontrollers</span>
+            </div>
+            <div class="bg-white border border-gray-200 p-5 rounded-2xl flex flex-col items-center text-center shadow-sm hover:border-gray-400 transition">
+                <span class="font-bold text-gray-900 mb-1">Git / GitHub</span>
+                <span class="text-[10px] bg-purple-50 text-purple-600 font-semibold px-2 py-0.5 rounded">Tool</span>
+            </div>
+            <div class="bg-white border border-gray-200 p-5 rounded-2xl flex flex-col items-center text-center shadow-sm hover:border-gray-400 transition">
+                <span class="font-bold text-gray-900 mb-1">VS Code</span>
+                <span class="text-[10px] bg-purple-50 text-purple-600 font-semibold px-2 py-0.5 rounded">Tool</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="max-w-6xl mx-auto px-6 py-20 border-t border-gray-100">
+        <h2 class="serif-heading text-3xl sm:text-4xl font-normal text-gray-900 mb-12">Featured Projects</h2>
+        
+        <div class="space-y-16">
+            <!-- Project 1 -->
+            <div class="bg-white border border-gray-200/80 rounded-3xl p-8 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center shadow-sm">
+                <div>
+                    <h3 class="serif-heading text-2xl font-bold text-gray-900 mb-3">ESP32 Object Detection & Navigation Robot</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Autonomous robot utilizing ultrasonic sensors and an ESP32 microcontroller for real-time obstacle avoidance and path planning, programmed with custom C++ firmware.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="text-xs bg-gray-100 px-3 py-1 rounded-md font-medium text-gray-700">ESP32</span>
+                        <span class="text-xs bg-gray-100 px-3 py-1 rounded-md font-medium text-gray-700">C++</span>
+                        <span class="text-xs bg-gray-100 px-3 py-1 rounded-md font-medium text-gray-700">Proteus</span>
+                        <span class="text-xs bg-gray-100 px-3 py-1 rounded-md font-medium text-gray-700">PCB Design</span>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/EngrShehrozAkhterCh" target="_blank" class="text-xs font-semibold bg-black text-white px-4 py-2.5 rounded-lg hover:bg-gray-800 transition">GitHub Repo</a>
+                    </div>
+                </div>
+                <div class="bg-gray-50 border border-gray-200 rounded-2xl h-64 flex items-center justify-center text-gray-400 font-medium text-sm">
+                    [Project Preview / Schematic]
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="bg-white border border-gray-200/80 rounded-3xl p-8 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center shadow-sm">
+                <div>
+                    <h3 class="serif-heading text-2xl font-bold text-gray-900 mb-3">Custom Variable Power Supply Unit</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Designed and etched a custom double-sided PCB for a regulated variable DC power supply, featuring precise voltage regulation, short-circuit protection, and custom thermal management.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="text-xs bg-gray-100 px-3 py-1 rounded-md font-medium text-gray-700">Altium Designer</span>
+                        <span class="text-xs bg-gray-100 px-3 py-1 rounded-md font-medium text-gray-700">Circuit Etching</span>
+                        <span class="text-xs bg-gray-100 px-3 py-1 rounded-md font-medium text-gray-700">Hardware Design</span>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/EngrShehrozAkhterCh" target="_blank" class="text-xs font-semibold bg-black text-white px-4 py-2.5 rounded-lg hover:bg-gray-800 transition">GitHub Repo</a>
+                    </div>
+                </div>
+                <div class="bg-gray-50 border border-gray-200 rounded-2xl h-64 flex items-center justify-center text-gray-400 font-medium text-sm">
+                    [Project Preview / PCB Layout]
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="max-w-6xl mx-auto px-6 py-20 border-t border-gray-100">
+        <h2 class="serif-heading text-3xl sm:text-4xl font-normal text-gray-900 mb-12">Get in Touch</h2>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Form -->
+            <div class="bg-white border border-gray-200/80 p-8 rounded-3xl shadow-sm">
+                <h3 class="text-lg font-bold text-gray-900 mb-6">Send Me Message</h3>
+                <form action="#" method="POST" class="space-y-4">
+                    <div>
+                        <input type="text" placeholder="Your Name" class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-black transition" required>
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Your Email" class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-black transition" required>
+                    </div>
+                    <div>
+                        <textarea rows="4" placeholder="Your Message" class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-black transition resize-none" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-black hover:bg-gray-800 text-white font-medium py-3 rounded-xl transition text-sm">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+            <!-- Info & Links -->
+            <div class="flex flex-col justify-between">
+                <div class="bg-white border border-gray-200/80 p-8 rounded-3xl shadow-sm mb-6">
+                    <span class="inline-block bg-emerald-50 text-emerald-600 text-xs font-semibold px-2.5 py-1 rounded-md mb-4">Available 24/7</span>
+                    <h3 class="serif-heading text-2xl font-bold text-gray-900 mb-2">Muhammad Shehroz Akhter</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                        I'm currently available for hardware/firmware engineering internships, projects, and collaborations. Reach out anytime!
+                    </p>
+                    <div class="space-y-3 text-sm">
+                        <div class="flex items-center space-x-3 text-gray-700 bg-gray-50 p-3 rounded-xl border border-gray-100">
+                            <span class="font-semibold">Email:</span> 
+                            <a href="mailto:shehrozakhter@example.com" class="hover:underline">shehrozakhter@example.com</a>
+                        </div>
+                        <div class="flex items-center space-x-3 text-gray-700 bg-gray-50 p-3 rounded-xl border border-gray-100">
+                            <span class="font-semibold">GitHub:</span> 
+                            <a href="https://github.com/EngrShehrozAkhterCh" target="_blank" class="hover:underline">github.com/EngrShehrozAkhterCh</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-200 bg-white py-12 mt-12">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between text-sm text-gray-500">
+            <div class="mb-4 sm:mb-0">
+                <p class="font-bold text-gray-900">Muhammad Shehroz Akhter</p>
+                <p class="text-xs">Embedded Systems & Firmware Engineer</p>
+            </div>
+            <p class="text-xs">© 2026 Muhammad Shehroz Akhter. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
