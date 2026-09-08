@@ -90,12 +90,10 @@
             Muhammad <br /><span class="font-serif italic font-light">Shehroz Akhter</span>
         </h1>
         <p class="text-xl sm:text-2xl font-medium text-blue-600 dark:text-blue-400 mb-6">
-            Embedded Systems & Firmware Engineer
+            EE Student @ UET Lahore ’28 | R&D Intern @ SkyPower | Embedded Systems & Electronics Engineer | PCB ·
+            Arduino EasyEDA | IEEE Director | Exploring Embedded AI
         </p>
-        <p class="text-gray-600 dark:text-gray-300 text-lg max-w-2xl leading-relaxed mb-10">
-            Designing robust hardware-software co-designs, custom double-sided PCBs, and high-performance
-            microcontroller firmware at UET Lahore.
-        </p>
+
 
         <div class="flex flex-wrap items-center gap-4">
             <a href="#projects"
@@ -141,8 +139,7 @@
                 <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Electrical Engineering Student</h3>
                 <p class="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-4">UET Lahore • 2024 - 2028</p>
                 <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-                    Specializing in firmware, embedded systems, and hardware-software co-design with active involvement
-                    in IEEE and Skypower initiatives.
+                    Electrical Engineering Student at UET Lahore | 5th Semester | Embedded Systems & Firmware
                 </p>
             </div>
 
@@ -271,314 +268,496 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects Section (Featured Showcase Layout matching reference style) -->
     <section id="projects" class="max-w-6xl mx-auto px-6 py-20 border-t border-gray-100 dark:border-gray-900">
-        <h2 class="serif-heading text-3xl sm:text-4xl font-normal text-gray-900 dark:text-white mb-12">Featured Projects
+        <h2 class="serif-heading text-3xl sm:text-4xl font-normal text-gray-900 dark:text-white mb-16">Featured Projects
         </h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="space-y-24">
             <!-- Project 1 -->
-            <div
-                class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 rounded-3xl p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between">
-                <div>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div
+                    class="lg:col-span-7 bg-gray-50 dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 rounded-3xl p-4 sm:p-6 shadow-sm overflow-hidden">
                     <div
-                        class="w-full h-48 bg-gray-100 dark:bg-gray-800 rounded-2xl mb-6 overflow-hidden border border-gray-100 dark:border-gray-700">
+                        class="w-full h-72 sm:h-96 rounded-2xl overflow-hidden border border-gray-200/60 dark:border-gray-700/60 bg-white dark:bg-gray-950">
                         <img src="pics/digital-clock.png" alt="Digital Clock Preview"
                             class="w-full h-full object-cover">
                     </div>
+                </div>
+                <div class="lg:col-span-5 space-y-6">
                     <span
                         class="text-[10px] bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-400 font-semibold px-2.5 py-1 rounded-md">Digital
                         Logic & Hardware</span>
-                    <h3 class="serif-heading text-xl font-bold text-gray-900 dark:text-white mt-3 mb-2">24-Hour Digital
-                        Clock & Stopwatch</h3>
-                    <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
+                    <h3 class="serif-heading text-3xl sm:text-4xl font-normal text-gray-900 dark:text-white">24-Hour
+                        Digital Clock & Stopwatch</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-base leading-relaxed">
                         Designed, simulated, and fabricated a fully functional 24-Hour Digital Clock & Dual-Mode
                         Stopwatch entirely from scratch using discrete 74-series ICs (NE555 timer, 74LS90 decade
                         counters, 74LS47 decoders) with zero microcontrollers or firmware.
                     </p>
-                </div>
-                <div class="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-800">
-                    <span class="text-xs text-gray-400">UET Lahore Project</span>
-                    <a href="https://www.linkedin.com/posts/activity-7473032879971713024-ozny?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFH-CHMBGchTZMudSO3RssSKa5VOyeCMsIE"
-                        target="_blank"
-                        class="bg-black dark:bg-white text-white dark:text-black px-4 py-2 rounded-xl text-xs font-semibold hover:bg-gray-800 dark:hover:bg-gray-200 transition">View
-                        on LinkedIn &rarr;</a>
+                    <ul class="space-y-2.5 text-sm text-gray-600 dark:text-gray-300">
+                        <li class="flex items-center space-x-2"><span
+                                class="w-2 h-2 rounded-full bg-emerald-500"></span><span>1Hz square wave clock generator
+                                using NE555 timer</span></li>
+                        <li class="flex items-center space-x-2"><span
+                                class="w-2 h-2 rounded-full bg-emerald-500"></span><span>Cascaded Mod-10 and Mod-6
+                                counters for accurate timekeeping</span></li>
+                        <li class="flex items-center space-x-2"><span
+                                class="w-2 h-2 rounded-full bg-emerald-500"></span><span>Fully simulated in Proteus and
+                                fabricated via EasyEDA</span></li>
+                    </ul>
+                    <div class="pt-2">
+                        <a href="https://www.linkedin.com/posts/activity-7473032879971713024-ozny?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFH-CHMBGchTZMudSO3RssSKa5VOyeCMsIE"
+                            target="_blank"
+                            class="inline-flex items-center space-x-2 bg-black hover:bg-gray-800 dark:bg-white dark:hover:bg-gray-200 text-white dark:text-black font-medium px-6 py-3 rounded-xl transition text-sm shadow-sm">
+                            <span>View on LinkedIn</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <!-- Project 2 -->
-            <div
-                class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 rounded-3xl p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between">
-                <div>
-                    <div
-                        class="w-full h-48 bg-gray-100 dark:bg-gray-800 rounded-2xl mb-6 overflow-hidden border border-gray-100 dark:border-gray-700">
-                        <img src="pics/bldc-motor.jpeg" alt="BLDC Motor Preview" class="w-full h-full object-cover">
-                    </div>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 space-y-6 lg:order-1 order-2">
                     <span
                         class="text-[10px] bg-emerald-50 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400 font-semibold px-2.5 py-1 rounded-md">Power
                         Electronics</span>
-                    <h3 class="serif-heading text-xl font-bold text-gray-900 dark:text-white mt-3 mb-2">3-Phase BLDC
-                        Motor (From Scratch)</h3>
-                    <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
-                        Designed and built a 3-phase Brushless DC motor with Star (Y) connection, wound stator coils
-                        using 28-AWG copper wire (120 turns/phase), permanent magnet rotor using neodymium magnets, and
-                        integrated ESC control.
+                    <h3 class="serif-heading text-3xl sm:text-4xl font-normal text-gray-900 dark:text-white">3-Phase
+                        BLDC Motor (From Scratch)</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-base leading-relaxed">
+                        Designed and built a 3-phase Brushless DC motor from scratch to bridge electromagnetic theory
+                        with real-world power electronics hardware implementation.
                     </p>
+                    <ul class="space-y-2.5 text-sm text-gray-600 dark:text-gray-300">
+                        <li class="flex items-center space-x-2"><span
+                                class="w-2 h-2 rounded-full bg-emerald-500"></span><span>3-phase stator design with Star
+                                (Y) connection</span></li>
+                        <li class="flex items-center space-x-2"><span
+                                class="w-2 h-2 rounded-full bg-emerald-500"></span><span>Hand-wound stator coils using
+                                28-AWG copper wire (120 turns/phase)</span></li>
+                        <li class="flex items-center space-x-2"><span
+                                class="w-2 h-2 rounded-full bg-emerald-500"></span><span>Neodymium permanent magnet
+                                rotor with integrated ESC control</span></li>
+                    </ul>
+                    <div class="pt-2">
+                        <a href="https://www.linkedin.com/posts/activity-7426626466085285888-QvX_?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFH-CHMBGchTZMudSO3RssSKa5VOyeCMsIE"
+                            target="_blank"
+                            class="inline-flex items-center space-x-2 bg-black hover:bg-gray-800 dark:bg-white dark:hover:bg-gray-200 text-white dark:text-black font-medium px-6 py-3 rounded-xl transition text-sm shadow-sm">
+                            <span>View on LinkedIn</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-                <div class="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-800">
-                    <span class="text-xs text-gray-400">Hardware Prototype</span>
-                    <a href="https://www.linkedin.com/posts/activity-7426626466085285888-QvX_?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFH-CHMBGchTZMudSO3RssSKa5VOyeCMsIE"
-                        target="_blank"
-                        class="bg-black dark:bg-white text-white dark:text-black px-4 py-2 rounded-xl text-xs font-semibold hover:bg-gray-800 dark:hover:bg-gray-200 transition">View
-                        on LinkedIn &rarr;</a>
+                <div
+                    class="lg:col-span-7 bg-gray-50 dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 rounded-3xl p-4 sm:p-6 shadow-sm overflow-hidden lg:order-2 order-1">
+                    <div
+                        class="w-full h-72 sm:h-96 rounded-2xl overflow-hidden border border-gray-200/60 dark:border-gray-700/60 bg-white dark:bg-gray-950">
+                        <img src="pics/bldc-motor.jpeg" alt="BLDC Motor Preview" class="w-full h-full object-cover">
+                    </div>
                 </div>
             </div>
 
             <!-- Project 3 -->
-            <div
-                class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 rounded-3xl p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between">
-                <div>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div
+                    class="lg:col-span-7 bg-gray-50 dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 rounded-3xl p-4 sm:p-6 shadow-sm overflow-hidden">
                     <div
-                        class="w-full h-48 bg-gray-100 dark:bg-gray-800 rounded-2xl mb-6 overflow-hidden border border-gray-100 dark:border-gray-700">
+                        class="w-full h-72 sm:h-96 rounded-2xl overflow-hidden border border-gray-200/60 dark:border-gray-700/60 bg-white dark:bg-gray-950">
                         <img src="pics/power-supply.png" alt="Power Supply Preview" class="w-full h-full object-cover">
                     </div>
+                </div>
+                <div class="lg:col-span-5 space-y-6">
                     <span
                         class="text-[10px] bg-amber-50 dark:bg-amber-950 text-amber-600 dark:text-amber-400 font-semibold px-2.5 py-1 rounded-md">Analog
                         Electronics</span>
-                    <h3 class="serif-heading text-xl font-bold text-gray-900 dark:text-white mt-3 mb-2">Variable DC
+                    <h3 class="serif-heading text-3xl sm:text-4xl font-normal text-gray-900 dark:text-white">Variable DC
                         Power Supply (0-16 V)</h3>
-                    <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
-                        Completed a hands-on electronics project using an LM317 regulator, 220V AC input, rectification
-                        and filtering techniques, ripple voltage calculation, and thermal considerations.
+                    <p class="text-gray-600 dark:text-gray-300 text-base leading-relaxed">
+                        Completed a hands-on electronics project involving the complete design and hardware
+                        implementation of an adjustable DC power supply using industry-standard components.
                     </p>
-                </div>
-                <div class="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-800">
-                    <span class="text-xs text-gray-400">Hardware Implementation</span>
-                    <a href="https://www.linkedin.com/posts/activity-7422297546179555328-tcBq?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFH-CHMBGchTZMudSO3RssSKa5VOyeCMsIE"
-                        target="_blank"
-                        class="bg-black dark:bg-white text-white dark:text-black px-4 py-2 rounded-xl text-xs font-semibold hover:bg-gray-800 dark:hover:bg-gray-200 transition">View
-                        on LinkedIn &rarr;</a>
+                    <ul class="space-y-2.5 text-sm text-gray-600 dark:text-gray-300">
+                        <li class="flex items-center space-x-2"><span
+                                class="w-2 h-2 rounded-full bg-emerald-500"></span><span>LM317 voltage regulator with
+                                220V AC input</span></li>
+                        <li class="flex items-center space-x-2"><span
+                                class="w-2 h-2 rounded-full bg-emerald-500"></span><span>Rectification, filtering, and
+                                ripple voltage mitigation techniques</span></li>
+                        <li class="flex items-center space-x-2"><span
+                                class="w-2 h-2 rounded-full bg-emerald-500"></span><span>Thermal dissipation management
+                                and design margin optimization</span></li>
+                    </ul>
+                    <div class="pt-2">
+                        <a href="https://www.linkedin.com/posts/activity-7422297546179555328-tcBq?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFH-CHMBGchTZMudSO3RssSKa5VOyeCMsIE"
+                            target="_blank"
+                            class="inline-flex items-center space-x-2 bg-black hover:bg-gray-800 dark:bg-white dark:hover:bg-gray-200 text-white dark:text-black font-medium px-6 py-3 rounded-xl transition text-sm shadow-sm">
+                            <span>View on LinkedIn</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <!-- Project 4 -->
-            <div
-                class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 rounded-3xl p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between">
-                <div>
-                    <div
-                        class="w-full h-48 bg-gray-100 dark:bg-gray-800 rounded-2xl mb-6 overflow-hidden border border-gray-100 dark:border-gray-700">
-                        <img src="pics/ripple-adder.jpeg" alt="PCB Preview" class="w-full h-full object-cover">
-                    </div>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 space-y-6 lg:order-1 order-2">
                     <span
                         class="text-[10px] bg-purple-50 dark:bg-purple-950 text-purple-600 dark:text-purple-400 font-semibold px-2.5 py-1 rounded-md">PCB
                         Design & Logic</span>
-                    <h3 class="serif-heading text-xl font-bold text-gray-900 dark:text-white mt-3 mb-2">4-bit Ripple
-                        Carry Adder PCB</h3>
-                    <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
-                        Designed in EasyEDA using CD74HC283E adder IC, push-button inputs, LM7805 voltage regulator, and
-                        manual trace routing on a 2-layer board with full Proteus simulation and hand soldering.
+                    <h3 class="serif-heading text-3xl sm:text-4xl font-normal text-gray-900 dark:text-white">4-bit
+                        Ripple Carry Adder PCB</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-base leading-relaxed">
+                        Designed and manufactured a custom 2-layer PCB for a 4-bit Ripple Carry Adder entirely from
+                        scratch for Digital Logic (EE-272).
                     </p>
+                    <ul class="space-y-2.5 text-sm text-gray-600 dark:text-gray-300">
+                        <li class="flex items-center space-x-2"><span
+                                class="w-2 h-2 rounded-full bg-emerald-500"></span><span>Schematic capture in EasyEDA
+                                using CD74HC283E adder IC</span></li>
+                        <li class="flex items-center space-x-2"><span
+                                class="w-2 h-2 rounded-full bg-emerald-500"></span><span>Manual trace routing, Gerber
+                                export, and Proteus logic verification</span></li>
+                        <li class="flex items-center space-x-2"><span
+                                class="w-2 h-2 rounded-full bg-emerald-500"></span><span>Board fabrication and
+                                hand-soldering of all components</span></li>
+                    </ul>
+                    <div class="pt-2">
+                        <a href="https://www.linkedin.com/posts/activity-7455562603226886144-plGA?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFH-CHMBGchTZMudSO3RssSKa5VOyeCMsIE"
+                            target="_blank"
+                            class="inline-flex items-center space-x-2 bg-black hover:bg-gray-800 dark:bg-white dark:hover:bg-gray-200 text-white dark:text-black font-medium px-6 py-3 rounded-xl transition text-sm shadow-sm">
+                            <span>View on LinkedIn</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-                <div class="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-800">
-                    <span class="text-xs text-gray-400">UET Lahore Project</span>
-                    <a href="https://www.linkedin.com/posts/activity-7455562603226886144-plGA?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFH-CHMBGchTZMudSO3RssSKa5VOyeCMsIE"
-                        target="_blank"
-                        class="bg-black dark:bg-white text-white dark:text-black px-4 py-2 rounded-xl text-xs font-semibold hover:bg-gray-800 dark:hover:bg-gray-200 transition">View
-                        on LinkedIn &rarr;</a>
+                <div
+                    class="lg:col-span-7 bg-gray-50 dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 rounded-3xl p-4 sm:p-6 shadow-sm overflow-hidden lg:order-2 order-1">
+                    <div
+                        class="w-full h-72 sm:h-96 rounded-2xl overflow-hidden border border-gray-200/60 dark:border-gray-700/60 bg-white dark:bg-gray-950">
+                        <img src="pics/ripple-adder.jpeg" alt="PCB Preview" class="w-full h-full object-cover">
+                    </div>
                 </div>
             </div>
 
             <!-- Project 5 -->
-            <div
-                class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 rounded-3xl p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between">
-                <div>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div
+                    class="lg:col-span-7 bg-gray-50 dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 rounded-3xl p-4 sm:p-6 shadow-sm overflow-hidden">
                     <div
-                        class="w-full h-48 bg-gray-100 dark:bg-gray-800 rounded-2xl mb-6 overflow-hidden border border-gray-100 dark:border-gray-700">
+                        class="w-full h-72 sm:h-96 rounded-2xl overflow-hidden border border-gray-200/60 dark:border-gray-700/60 bg-white dark:bg-gray-950">
                         <img src="pics/sci-machine.jpeg" alt="SCI Machine Preview" class="w-full h-full object-cover">
                     </div>
+                </div>
+                <div class="lg:col-span-5 space-y-6">
                     <span
                         class="text-[10px] bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-400 font-semibold px-2.5 py-1 rounded-md">Industrial
                         R&D</span>
-                    <h3 class="serif-heading text-xl font-bold text-gray-900 dark:text-white mt-3 mb-2">Secondary
+                    <h3 class="serif-heading text-3xl sm:text-4xl font-normal text-gray-900 dark:text-white">Secondary
                         Current Injection (SCI) Machine</h3>
-                    <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
+                    <p class="text-gray-600 dark:text-gray-300 text-base leading-relaxed">
                         Contributed to the design, construction, and assembly of a Secondary Current Injection machine
-                        during R&D internship at Skypower. Explored transformer and capacitor banks, high-power NPN/PNP
-                        transistors, thermal heat sinking, and 3-phase board integration.
+                        during R&D internship at Skypower Pvt Ltd.
                     </p>
-                </div>
-                <div class="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-800">
-                    <span class="text-xs text-gray-400">Skypower R&D Internship</span>
-                    <a href="https://www.linkedin.com/posts/activity-7495132420803825666-R0LX?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFH-CHMBGchTZMudSO3RssSKa5VOyeCMsIE"
-                        target="_blank"
-                        class="bg-black dark:bg-white text-white dark:text-black px-4 py-2 rounded-xl text-xs font-semibold hover:bg-gray-800 dark:hover:bg-gray-200 transition">View
-                        on LinkedIn &rarr;</a>
+                    <ul class="space-y-2.5 text-sm text-gray-600 dark:text-gray-300">
+                        <li class="flex items-center space-x-2"><span
+                                class="w-2 h-2 rounded-full bg-emerald-500"></span><span>Transformer and capacitor bank
+                                architecture</span></li>
+                        <li class="flex items-center space-x-2"><span
+                                class="w-2 h-2 rounded-full bg-emerald-500"></span><span>High-power NPN/PNP transistor
+                                integration and thermal heat sinking</span></li>
+                        <li class="flex items-center space-x-2"><span
+                                class="w-2 h-2 rounded-full bg-emerald-500"></span><span>3-phase board assembly and
+                                troubleshooting</span></li>
+                    </ul>
+                    <div class="pt-2">
+                        <a href="https://www.linkedin.com/posts/activity-7495132420803825666-R0LX?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFH-CHMBGchTZMudSO3RssSKa5VOyeCMsIE"
+                            target="_blank"
+                            class="inline-flex items-center space-x-2 bg-black hover:bg-gray-800 dark:bg-white dark:hover:bg-gray-200 text-white dark:text-black font-medium px-6 py-3 rounded-xl transition text-sm shadow-sm">
+                            <span>View on LinkedIn</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <!-- Project 6 -->
-            <div
-                class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 rounded-3xl p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between">
-                <div>
-                    <div
-                        class="w-full h-48 bg-gray-100 dark:bg-gray-800 rounded-2xl mb-6 overflow-hidden border border-gray-100 dark:border-gray-700">
-                        <img src="pics/tcs-relay.jpeg" alt="TCS Relay Preview" class="w-full h-full object-cover">
-                    </div>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 space-y-6 lg:order-1 order-2">
                     <span
                         class="text-[10px] bg-emerald-50 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400 font-semibold px-2.5 py-1 rounded-md">Electrical
                         Protection</span>
-                    <h3 class="serif-heading text-xl font-bold text-gray-900 dark:text-white mt-3 mb-2">Trip Circuit
-                        Supervision (TCS) Relay</h3>
-                    <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
+                    <h3 class="serif-heading text-3xl sm:text-4xl font-normal text-gray-900 dark:text-white">Trip
+                        Circuit Supervision (TCS) Relay</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-base leading-relaxed">
                         Explored industrial electrical protection systems by studying how a TCS relay continuously
-                        monitors trip circuit health, continuity, and signal paths under various operational and fault
-                        conditions.
+                        monitors trip circuit health and continuity.
                     </p>
+                    <ul class="space-y-2.5 text-sm text-gray-600 dark:text-gray-300">
+                        <li class="flex items-center space-x-2"><span
+                                class="w-2 h-2 rounded-full bg-emerald-500"></span><span>Study of relay operation in
+                                power system protection</span></li>
+                        <li class="flex items-center space-x-2"><span
+                                class="w-2 h-2 rounded-full bg-emerald-500"></span><span>Circuit trace analysis and
+                                fault condition verification</span></li>
+                        <li class="flex items-center space-x-2"><span
+                                class="w-2 h-2 rounded-full bg-emerald-500"></span><span>Understanding trip circuit
+                                availability as vital as trip commands</span></li>
+                    </ul>
+                    <div class="pt-2">
+                        <a href="https://www.linkedin.com/posts/activity-7494411334361440256-BBx7?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFH-CHMBGchTZMudSO3RssSKa5VOyeCMsIE"
+                            target="_blank"
+                            class="inline-flex items-center space-x-2 bg-black hover:bg-gray-800 dark:bg-white dark:hover:bg-gray-200 text-white dark:text-black font-medium px-6 py-3 rounded-xl transition text-sm shadow-sm">
+                            <span>View on LinkedIn</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-                <div class="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-800">
-                    <span class="text-xs text-gray-400">Skypower R&D Internship</span>
-                    <a href="https://www.linkedin.com/posts/activity-7494411334361440256-BBx7?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFH-CHMBGchTZMudSO3RssSKa5VOyeCMsIE"
-                        target="_blank"
-                        class="bg-black dark:bg-white text-white dark:text-black px-4 py-2 rounded-xl text-xs font-semibold hover:bg-gray-800 dark:hover:bg-gray-200 transition">View
-                        on LinkedIn &rarr;</a>
+                <div
+                    class="lg:col-span-7 bg-gray-50 dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 rounded-3xl p-4 sm:p-6 shadow-sm overflow-hidden lg:order-2 order-1">
+                    <div
+                        class="w-full h-72 sm:h-96 rounded-2xl overflow-hidden border border-gray-200/60 dark:border-gray-700/60 bg-white dark:bg-gray-950">
+                        <img src="pics/tcs-relay.jpeg" alt="TCS Relay Preview" class="w-full h-full object-cover">
+                    </div>
                 </div>
             </div>
 
             <!-- Project 7 -->
-            <div
-                class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 rounded-3xl p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between">
-                <div>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div
+                    class="lg:col-span-7 bg-gray-50 dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 rounded-3xl p-4 sm:p-6 shadow-sm overflow-hidden">
                     <div
-                        class="w-full h-48 bg-gray-100 dark:bg-gray-800 rounded-2xl mb-6 overflow-hidden border border-gray-100 dark:border-gray-700">
+                        class="w-full h-72 sm:h-96 rounded-2xl overflow-hidden border border-gray-200/60 dark:border-gray-700/60 bg-white dark:bg-gray-950">
                         <img src="pics/rfid-esp32.jpeg" alt="RFID ESP32 Preview" class="w-full h-full object-cover">
                     </div>
+                </div>
+                <div class="lg:col-span-5 space-y-6">
                     <span
                         class="text-[10px] bg-indigo-50 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 font-semibold px-2.5 py-1 rounded-md">Embedded
                         IoT System</span>
-                    <h3 class="serif-heading text-xl font-bold text-gray-900 dark:text-white mt-3 mb-2">RFID-Based ESP32
-                        Embedded System</h3>
-                    <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
-                        Integrated an RFID reader, ESP32 microcontroller, TFT display, relay, buzzer, and custom PCB to
-                        create a functional prototype where card scans trigger real-time system feedback.
+                    <h3 class="serif-heading text-3xl sm:text-4xl font-normal text-gray-900 dark:text-white">RFID-Based
+                        ESP32 Embedded System</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-base leading-relaxed">
+                        Integrated hardware modules into a complete embedded system combining microcontroller firmware
+                        with custom PCB design.
                     </p>
-                </div>
-                <div class="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-800">
-                    <span class="text-xs text-gray-400">Skypower R&D Internship</span>
-                    <a href="https://www.linkedin.com/posts/activity-7493686557933998080-WZ8p?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFH-CHMBGchTZMudSO3RssSKa5VOyeCMsIE"
-                        target="_blank"
-                        class="bg-black dark:bg-white text-white dark:text-black px-4 py-2 rounded-xl text-xs font-semibold hover:bg-gray-800 dark:hover:bg-gray-200 transition">View
-                        on LinkedIn &rarr;</a>
+                    <ul class="space-y-2.5 text-sm text-gray-600 dark:text-gray-300">
+                        <li class="flex items-center space-x-2"><span
+                                class="w-2 h-2 rounded-full bg-emerald-500"></span><span>RFID reader & TFT display
+                                interfacing with ESP32</span></li>
+                        <li class="flex items-center space-x-2"><span
+                                class="w-2 h-2 rounded-full bg-emerald-500"></span><span>Relay and buzzer control based
+                                on authentication scans</span></li>
+                        <li class="flex items-center space-x-2"><span
+                                class="w-2 h-2 rounded-full bg-emerald-500"></span><span>Hardware-software co-design and
+                                system debugging</span></li>
+                    </ul>
+                    <div class="pt-2">
+                        <a href="https://www.linkedin.com/posts/activity-7493686557933998080-WZ8p?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFH-CHMBGchTZMudSO3RssSKa5VOyeCMsIE"
+                            target="_blank"
+                            class="inline-flex items-center space-x-2 bg-black hover:bg-gray-800 dark:bg-white dark:hover:bg-gray-200 text-white dark:text-black font-medium px-6 py-3 rounded-xl transition text-sm shadow-sm">
+                            <span>View on LinkedIn</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <!-- Project 8 -->
-            <div
-                class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 rounded-3xl p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between">
-                <div>
-                    <div
-                        class="w-full h-48 bg-gray-100 dark:bg-gray-800 rounded-2xl mb-6 overflow-hidden border border-gray-100 dark:border-gray-700">
-                        <img src="pics/laser-pcb.jpeg" alt="Laser PCB Preview" class="w-full h-full object-cover">
-                    </div>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 space-y-6 lg:order-1 order-2">
                     <span
                         class="text-[10px] bg-emerald-50 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400 font-semibold px-2.5 py-1 rounded-md">Hardware
                         Manufacturing</span>
-                    <h3 class="serif-heading text-xl font-bold text-gray-900 dark:text-white mt-3 mb-2">Laser-Based PCB
-                        Fabrication</h3>
-                    <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
-                        Gained hands-on experience converting digital PCB layouts into physical boards using AutoCAD
-                        file preparation, laser processing, copper removal, and trace electrical isolation.
+                    <h3 class="serif-heading text-3xl sm:text-4xl font-normal text-gray-900 dark:text-white">Laser-Based
+                        PCB Fabrication</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-base leading-relaxed">
+                        Converted digital PCB layouts into physical hardware boards using precision laser processing
+                        techniques during internship at Skypower.
                     </p>
+                    <ul class="space-y-2.5 text-sm text-gray-600 dark:text-gray-300">
+                        <li class="flex items-center space-x-2"><span
+                                class="w-2 h-2 rounded-full bg-emerald-500"></span><span>AutoCAD file preparation and
+                                artwork alignment</span></li>
+                        <li class="flex items-center space-x-2"><span
+                                class="w-2 h-2 rounded-full bg-emerald-500"></span><span>Laser-based copper removal and
+                                trace isolation</span></li>
+                        <li class="flex items-center space-x-2"><span
+                                class="w-2 h-2 rounded-full bg-emerald-500"></span><span>Quality inspection and trace
+                                continuity verification</span></li>
+                    </ul>
+                    <div class="pt-2">
+                        <a href="https://www.linkedin.com/posts/activity-7492233235217715200-MFHq?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFH-CHMBGchTZMudSO3RssSKa5VOyeCMsIE"
+                            target="_blank"
+                            class="inline-flex items-center space-x-2 bg-black hover:bg-gray-800 dark:bg-white dark:hover:bg-gray-200 text-white dark:text-black font-medium px-6 py-3 rounded-xl transition text-sm shadow-sm">
+                            <span>View on LinkedIn</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-                <div class="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-800">
-                    <span class="text-xs text-gray-400">Skypower R&D Internship</span>
-                    <a href="https://www.linkedin.com/posts/activity-7492233235217715200-MFHq?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFH-CHMBGchTZMudSO3RssSKa5VOyeCMsIE"
-                        target="_blank"
-                        class="bg-black dark:bg-white text-white dark:text-black px-4 py-2 rounded-xl text-xs font-semibold hover:bg-gray-800 dark:hover:bg-gray-200 transition">View
-                        on LinkedIn &rarr;</a>
+                <div
+                    class="lg:col-span-7 bg-gray-50 dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 rounded-3xl p-4 sm:p-6 shadow-sm overflow-hidden lg:order-2 order-1">
+                    <div
+                        class="w-full h-72 sm:h-96 rounded-2xl overflow-hidden border border-gray-200/60 dark:border-gray-700/60 bg-white dark:bg-gray-950">
+                        <img src="pics/laser-pcb.jpeg" alt="Laser PCB Preview" class="w-full h-full object-cover">
+                    </div>
                 </div>
             </div>
 
             <!-- Project 9 -->
-            <div
-                class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 rounded-3xl p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between">
-                <div>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div
+                    class="lg:col-span-7 bg-gray-50 dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 rounded-3xl p-4 sm:p-6 shadow-sm overflow-hidden">
                     <div
-                        class="w-full h-48 bg-gray-100 dark:bg-gray-800 rounded-2xl mb-6 overflow-hidden border border-gray-100 dark:border-gray-700">
+                        class="w-full h-72 sm:h-96 rounded-2xl overflow-hidden border border-gray-200/60 dark:border-gray-700/60 bg-white dark:bg-gray-950">
                         <img src="pics/high-voltage-detector..jpeg" alt="High Voltage Detector Preview"
                             class="w-full h-full object-cover">
                     </div>
+                </div>
+                <div class="lg:col-span-5 space-y-6">
                     <span
                         class="text-[10px] bg-amber-50 dark:bg-amber-950 text-amber-600 dark:text-amber-400 font-semibold px-2.5 py-1 rounded-md">Hardware
                         Reverse Engineering</span>
-                    <h3 class="serif-heading text-xl font-bold text-gray-900 dark:text-white mt-3 mb-2">High Voltage
-                        Detector PCB Reverse Engineering</h3>
-                    <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
+                    <h3 class="serif-heading text-3xl sm:text-4xl font-normal text-gray-900 dark:text-white">High
+                        Voltage Detector PCB Reverse Engineering</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-base leading-relaxed">
                         Analyzed an existing electronics board, traced circuit connections, reconstructed schematics,
-                        practiced SMD soldering and assembly, and performed thorough testing and debugging.
+                        and gained hands-on SMD soldering experience.
                     </p>
-                </div>
-                <div class="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-800">
-                    <span class="text-xs text-gray-400">Skypower R&D Internship</span>
-                    <a href="https://www.linkedin.com/posts/activity-7492958061406371841-74zZ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFH-CHMBGchTZMudSO3RssSKa5VOyeCMsIE"
-                        target="_blank"
-                        class="bg-black dark:bg-white text-white dark:text-black px-4 py-2 rounded-xl text-xs font-semibold hover:bg-gray-800 dark:hover:bg-gray-200 transition">View
-                        on LinkedIn &rarr;</a>
+                    <ul class="space-y-2.5 text-sm text-gray-600 dark:text-gray-300">
+                        <li class="flex items-center space-x-2"><span
+                                class="w-2 h-2 rounded-full bg-emerald-500"></span><span>Physical board analysis and
+                                schematic reconstruction</span></li>
+                        <li class="flex items-center space-x-2"><span
+                                class="w-2 h-2 rounded-full bg-emerald-500"></span><span>SMD component handling,
+                                soldering, and board assembly</span></li>
+                        <li class="flex items-center space-x-2"><span
+                                class="w-2 h-2 rounded-full bg-emerald-500"></span><span>Debugging and functional
+                                verification of the repaired board</span></li>
+                    </ul>
+                    <div class="pt-2">
+                        <a href="https://www.linkedin.com/posts/activity-7492958061406371841-74zZ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFH-CHMBGchTZMudSO3RssSKa5VOyeCMsIE"
+                            target="_blank"
+                            class="inline-flex items-center space-x-2 bg-black hover:bg-gray-800 dark:bg-white dark:hover:bg-gray-200 text-white dark:text-black font-medium px-6 py-3 rounded-xl transition text-sm shadow-sm">
+                            <span>View on LinkedIn</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <!-- Project 10 -->
-            <div
-                class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 rounded-3xl p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between">
-                <div>
-                    <div
-                        class="w-full h-48 bg-gray-100 dark:bg-gray-800 rounded-2xl mb-6 overflow-hidden border border-gray-100 dark:border-gray-700">
-                        <img src="pics/logic-gates.jpeg" alt="Logic Gates Preview" class="w-full h-full object-cover">
-                    </div>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 space-y-6 lg:order-1 order-2">
                     <span
                         class="text-[10px] bg-purple-50 dark:bg-purple-950 text-purple-600 dark:text-purple-400 font-semibold px-2.5 py-1 rounded-md">Digital
                         Systems Lab</span>
-                    <h3 class="serif-heading text-xl font-bold text-gray-900 dark:text-white mt-3 mb-2">Half Adder &
-                        Full Adder Implementation</h3>
-                    <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
-                        Designed and implemented Half and Full Adders using only fundamental logic gates (NOT, AND, OR)
-                        to master gate-level realization, Boolean algebra, and truth table verification without direct
-                        XOR IC usage.
+                    <h3 class="serif-heading text-3xl sm:text-4xl font-normal text-gray-900 dark:text-white">Half Adder
+                        & Full Adder Implementation</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-base leading-relaxed">
+                        Designed and implemented arithmetic logic circuits using fundamental gates to master Boolean
+                        algebra and truth table verification.
                     </p>
+                    <ul class="space-y-2.5 text-sm text-gray-600 dark:text-gray-300">
+                        <li class="flex items-center space-x-2"><span
+                                class="w-2 h-2 rounded-full bg-emerald-500"></span><span>Realization of XOR
+                                functionality using basic logic gates (NOT, AND, OR)</span></li>
+                        <li class="flex items-center space-x-2"><span
+                                class="w-2 h-2 rounded-full bg-emerald-500"></span><span>Cascading two Half Adders to
+                                construct a Full Adder</span></li>
+                        <li class="flex items-center space-x-2"><span
+                                class="w-2 h-2 rounded-full bg-emerald-500"></span><span>Hardware lab testing and truth
+                                table validation</span></li>
+                    </ul>
+                    <div class="pt-2">
+                        <a href="https://www.linkedin.com/posts/activity-7434200974967177216-zBtz?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFH-CHMBGchTZMudSO3RssSKa5VOyeCMsIE"
+                            target="_blank"
+                            class="inline-flex items-center space-x-2 bg-black hover:bg-gray-800 dark:bg-white dark:hover:bg-gray-200 text-white dark:text-black font-medium px-6 py-3 rounded-xl transition text-sm shadow-sm">
+                            <span>View on LinkedIn</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-                <div class="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-800">
-                    <span class="text-xs text-gray-400">UET Lahore Lab Project</span>
-                    <a href="https://www.linkedin.com/posts/activity-7434200974967177216-zBtz?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFH-CHMBGchTZMudSO3RssSKa5VOyeCMsIE"
-                        target="_blank"
-                        class="bg-black dark:bg-white text-white dark:text-black px-4 py-2 rounded-xl text-xs font-semibold hover:bg-gray-800 dark:hover:bg-gray-200 transition">View
-                        on LinkedIn &rarr;</a>
+                <div
+                    class="lg:col-span-7 bg-gray-50 dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 rounded-3xl p-4 sm:p-6 shadow-sm overflow-hidden lg:order-2 order-1">
+                    <div
+                        class="w-full h-72 sm:h-96 rounded-2xl overflow-hidden border border-gray-200/60 dark:border-gray-700/60 bg-white dark:bg-gray-950">
+                        <img src="pics/logic-gates.jpeg" alt="Logic Gates Preview" class="w-full h-full object-cover">
+                    </div>
                 </div>
             </div>
 
             <!-- Project 11 -->
-            <div
-                class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 rounded-3xl p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between lg:col-span-2">
-                <div>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div
+                    class="lg:col-span-7 bg-gray-50 dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 rounded-3xl p-4 sm:p-6 shadow-sm overflow-hidden">
                     <div
-                        class="w-full h-48 bg-gray-100 dark:bg-gray-800 rounded-2xl mb-6 overflow-hidden border border-gray-100 dark:border-gray-700">
+                        class="w-full h-72 sm:h-96 rounded-2xl overflow-hidden border border-gray-200/60 dark:border-gray-700/60 bg-white dark:bg-gray-950">
                         <img src="pics/power-factor.jpeg" alt="Power Factor Preview" class="w-full h-full object-cover">
                     </div>
+                </div>
+                <div class="lg:col-span-5 space-y-6">
                     <span
                         class="text-[10px] bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-400 font-semibold px-2.5 py-1 rounded-md">Power
                         Quality & Systems</span>
-                    <h3 class="serif-heading text-xl font-bold text-gray-900 dark:text-white mt-3 mb-2">Power Factor
-                        Correction & Harmonic Mitigation</h3>
-                    <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
-                        Complex Engineering Problem (CEP) report for EE-110 at UET Lahore. Addressed low power factor
-                        (0.69) and 7th harmonic distortion (~350 Hz) for PharmaSafe Ltd. using an 80 µF shunt capacitor
-                        bank and passive LC filter to achieve PF 0.96.
+                    <h3 class="serif-heading text-3xl sm:text-4xl font-normal text-gray-900 dark:text-white">Power
+                        Factor Correction & Harmonic Mitigation</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-base leading-relaxed">
+                        Complex Engineering Problem (CEP) report for EE-110 at UET Lahore addressing industrial power
+                        quality issues.
                     </p>
-                </div>
-                <div class="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-800">
-                    <span class="text-xs text-gray-400">UET Lahore CEP Report</span>
-                    <a href="https://www.linkedin.com/posts/activity-7376954367561838592-oaud?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFH-CHMBGchTZMudSO3RssSKa5VOyeCMsIE"
-                        target="_blank"
-                        class="bg-black dark:bg-white text-white dark:text-black px-4 py-2 rounded-xl text-xs font-semibold hover:bg-gray-800 dark:hover:bg-gray-200 transition">View
-                        on LinkedIn &rarr;</a>
+                    <ul class="space-y-2.5 text-sm text-gray-600 dark:text-gray-300">
+                        <li class="flex items-center space-x-2"><span
+                                class="w-2 h-2 rounded-full bg-emerald-500"></span><span>Corrected low power factor from
+                                0.69 to 0.96 using an 80 µF shunt capacitor bank</span></li>
+                        <li class="flex items-center space-x-2"><span
+                                class="w-2 h-2 rounded-full bg-emerald-500"></span><span>Mitigated 7th harmonic
+                                distortion (~350 Hz) via a tuned passive LC filter</span></li>
+                        <li class="flex items-center space-x-2"><span
+                                class="w-2 h-2 rounded-full bg-emerald-500"></span><span>Simulated and validated in
+                                Multisim for industrial stability</span></li>
+                    </ul>
+                    <div class="pt-2">
+                        <a href="https://www.linkedin.com/posts/activity-7376954367561838592-oaud?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFH-CHMBGchTZMudSO3RssSKa5VOyeCMsIE"
+                            target="_blank"
+                            class="inline-flex items-center space-x-2 bg-black hover:bg-gray-800 dark:bg-white dark:hover:bg-gray-200 text-white dark:text-black font-medium px-6 py-3 rounded-xl transition text-sm shadow-sm">
+                            <span>View on LinkedIn</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -905,7 +1084,7 @@
             <div
                 class="border-t border-gray-100 dark:border-gray-900 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
                 <p class="text-xs text-gray-400 dark:text-gray-500">© 2026 Muhammad Shehroz Akhter. All rights reserved.
-
+                </p>
 
                 <div class="flex items-center space-x-6 text-xs font-semibold text-gray-600 dark:text-gray-400">
                     <a href="mailto:shehrozakhter7172@gmail.com"
@@ -974,6 +1153,11 @@
             document.documentElement.classList.add('dark');
         } else {
             document.documentElement.classList.remove('dark');
+        }
+
+        // Software Knowledge Toggle Life/Close popup helper
+        function closePopup() {
+            document.getElementById('devPopup').style.display = 'none';
         }
 
         // Software Knowledge Toggle Logic
