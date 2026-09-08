@@ -7,6 +7,11 @@
     <title>Muhammad Shehroz Akhter — Embedded Systems & Firmware Engineer</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="style.css">
     <!-- Google Fonts -->
@@ -15,33 +20,59 @@
         rel="stylesheet">
 </head>
 
-<body class="selection:bg-black selection:text-white relative">
+<body
+    class="bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black relative transition-colors duration-300">
 
     <!-- Header / Navbar -->
-    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+    <header
+        class="sticky top-0 z-50 bg-white/80 dark:bg-gray-950/80 backdrop-blur-md border-b border-gray-100 dark:border-gray-800 transition-colors duration-300">
         <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
             <div class="flex items-center space-x-3">
-                <div class="bg-black text-white font-bold px-3 py-2 rounded-lg text-sm tracking-wider">SA</div>
+                <div
+                    class="bg-black dark:bg-white text-white dark:text-black font-bold px-3 py-2 rounded-lg text-sm tracking-wider transition-colors duration-300">
+                    SA</div>
                 <div>
-                    <span class="font-bold text-gray-900 block text-sm sm:text-base">Muhammad Shehroz Akhter</span>
-                    <span class="text-xs text-emerald-600 flex items-center font-medium">
+                    <span class="font-bold text-gray-900 dark:text-white block text-sm sm:text-base">Muhammad Shehroz
+                        Akhter</span>
+                    <span class="text-xs text-emerald-600 dark:text-emerald-400 flex items-center font-medium">
                         <span class="w-2 h-2 rounded-full bg-emerald-500 inline-block mr-1.5 animate-pulse"></span>
                         Available for Opportunities
                     </span>
                 </div>
             </div>
 
-            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-600">
-                <a href="#home" class="text-black border-b-2 border-black pb-1">Home</a>
-                <a href="#about" class="hover:text-black transition">About</a>
-                <a href="#skills" class="hover:text-black transition">Skills</a>
-                <a href="#projects" class="hover:text-black transition">Projects</a>
-                <a href="#contact" class="hover:text-black transition">Contact</a>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-600 dark:text-gray-300">
+                <a href="#home"
+                    class="text-black dark:text-white border-b-2 border-black dark:border-white pb-1">Home</a>
+                <a href="#about" class="hover:text-black dark:hover:text-white transition">About</a>
+                <a href="#experience" class="hover:text-black dark:hover:text-white transition">Experience</a>
+                <a href="#projects" class="hover:text-black dark:hover:text-white transition">Projects</a>
+                <a href="#services" class="hover:text-black dark:hover:text-white transition">Services</a>
+                <a href="#education" class="hover:text-black dark:hover:text-white transition">Education</a>
+                <a href="#contact" class="hover:text-black dark:hover:text-white transition">Contact</a>
             </nav>
 
             <div class="flex items-center space-x-4">
+                <!-- Theme Toggle Button -->
+                <button onclick="toggleTheme()" aria-label="Toggle Theme"
+                    class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-900 transition">
+                    <!-- Sun Icon (Visible in Dark Mode) -->
+                    <svg id="sunIcon" class="w-5 h-5 hidden dark:block text-yellow-400" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="5" stroke-width="2" />
+                        <path stroke-linecap="round" stroke-width="2"
+                            d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+                    </svg>
+                    <!-- Moon Icon (Visible in Light Mode) -->
+                    <svg id="moonIcon" class="w-5 h-5 block dark:hidden text-gray-700" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+                    </svg>
+                </button>
+
                 <a href="#contact"
-                    class="bg-black hover:bg-gray-800 text-white text-sm font-medium px-5 py-2.5 rounded-full transition shadow-sm">
+                    class="bg-black hover:bg-gray-800 dark:bg-white dark:hover:bg-gray-200 text-white dark:text-black text-sm font-medium px-5 py-2.5 rounded-full transition shadow-sm">
                     Let's Talk
                 </a>
             </div>
@@ -51,24 +82,24 @@
     <!-- Hero Section -->
     <section id="home" class="max-w-6xl mx-auto px-6 pt-16 pb-24">
         <div
-            class="inline-block bg-gray-50 border border-gray-200 rounded-full px-3.5 py-1.5 text-xs font-semibold text-gray-600 tracking-wide uppercase mb-6">
+            class="inline-block bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-full px-3.5 py-1.5 text-xs font-semibold text-gray-600 dark:text-gray-300 tracking-wide uppercase mb-6">
             PORTFOLIO • 2026
         </div>
         <h1
-            class="serif-heading text-5xl sm:text-7xl lg:text-8xl font-normal tracking-tight text-gray-900 leading-[1.05] mb-6">
+            class="serif-heading text-5xl sm:text-7xl lg:text-8xl font-normal tracking-tight text-gray-900 dark:text-white leading-[1.05] mb-6">
             Muhammad <br /><span class="font-serif italic font-light">Shehroz Akhter</span>
         </h1>
-        <p class="text-xl sm:text-2xl font-medium text-blue-600 mb-6">
+        <p class="text-xl sm:text-2xl font-medium text-blue-600 dark:text-blue-400 mb-6">
             Embedded Systems & Firmware Engineer
         </p>
-        <p class="text-gray-600 text-lg max-w-2xl leading-relaxed mb-10">
+        <p class="text-gray-600 dark:text-gray-300 text-lg max-w-2xl leading-relaxed mb-10">
             Designing robust hardware-software co-designs, custom double-sided PCBs, and high-performance
             microcontroller firmware at UET Lahore.
         </p>
 
         <div class="flex flex-wrap items-center gap-4">
             <a href="#projects"
-                class="bg-gray-900 hover:bg-black text-white text-sm font-medium px-6 py-3.5 rounded-xl transition flex items-center space-x-2 shadow-sm">
+                class="bg-gray-900 hover:bg-black dark:bg-white dark:hover:bg-gray-200 text-white dark:text-black text-sm font-medium px-6 py-3.5 rounded-xl transition flex items-center space-x-2 shadow-sm">
                 <span>View Projects</span>
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
@@ -77,53 +108,56 @@
             </a>
             <!-- Download Resume Button -->
             <a href="resume.pdf" download
-                class="bg-white hover:bg-gray-50 text-gray-900 border border-gray-300 text-sm font-medium px-6 py-3.5 rounded-xl transition flex items-center space-x-2">
+                class="bg-white hover:bg-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 text-gray-900 dark:text-white border border-gray-300 dark:border-gray-700 text-sm font-medium px-6 py-3.5 rounded-xl transition flex items-center space-x-2">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
                 </svg>
                 <span>Download Resume</span>
             </a>
-            <a href="https://github.com/EngrShehrozAkhterCh" target="_blank"
-                class="bg-white hover:bg-gray-50 text-gray-900 border border-gray-300 text-sm font-medium px-6 py-3.5 rounded-xl transition">
-                GitHub
+            <!-- LinkedIn Button -->
+            <a href="https://www.linkedin.com/in/muhammad-shehroz-akhter-52b82a324" target="_blank"
+                class="bg-white hover:bg-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 text-gray-900 dark:text-white border border-gray-300 dark:border-gray-700 text-sm font-medium px-6 py-3.5 rounded-xl transition">
+                LinkedIn
             </a>
         </div>
     </section>
 
     <!-- About Me Section -->
-    <section id="about" class="max-w-6xl mx-auto px-6 py-20 border-t border-gray-100">
-        <h2 class="serif-heading text-3xl sm:text-4xl font-normal text-gray-900 mb-12">About Me</h2>
+    <section id="about" class="max-w-6xl mx-auto px-6 py-20 border-t border-gray-100 dark:border-gray-900">
+        <h2 class="serif-heading text-3xl sm:text-4xl font-normal text-gray-900 dark:text-white mb-12">About Me</h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="bg-white border border-gray-200/80 p-8 rounded-3xl shadow-sm hover:shadow-md transition">
+            <div
+                class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 p-8 rounded-3xl shadow-sm hover:shadow-md transition">
                 <div
-                    class="w-16 h-16 rounded-full border-2 border-emerald-500 flex items-center justify-center text-emerald-600 mb-6">
+                    class="w-16 h-16 rounded-full border-2 border-emerald-500 flex items-center justify-center text-emerald-600 dark:text-emerald-400 mb-6">
                     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                             d="M12 14l9-5-9-5-9 5 9 5z M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z">
                         </path>
                     </svg>
                 </div>
-                <h3 class="text-xl font-bold text-gray-900 mb-2">Electrical Engineering Student</h3>
-                <p class="text-sm font-semibold text-gray-500 mb-4">UET Lahore • 2024 - 2028</p>
-                <p class="text-gray-600 leading-relaxed">
+                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Electrical Engineering Student</h3>
+                <p class="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-4">UET Lahore • 2024 - 2028</p>
+                <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
                     Specializing in firmware, embedded systems, and hardware-software co-design with active involvement
                     in IEEE and Skypower initiatives.
                 </p>
             </div>
 
-            <div class="bg-white border border-gray-200/80 p-8 rounded-3xl shadow-sm hover:shadow-md transition">
+            <div
+                class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 p-8 rounded-3xl shadow-sm hover:shadow-md transition">
                 <div
-                    class="w-16 h-16 rounded-full border-2 border-indigo-500 flex items-center justify-center text-indigo-600 mb-6">
+                    class="w-16 h-16 rounded-full border-2 border-indigo-500 flex items-center justify-center text-indigo-600 dark:text-indigo-400 mb-6">
                     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                             d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
                     </svg>
                 </div>
-                <h3 class="text-xl font-bold text-gray-900 mb-2">PCB & Hardware Prototyping</h3>
-                <p class="text-sm font-semibold text-gray-500 mb-4">Altium Designer • Proteus</p>
-                <p class="text-gray-600 leading-relaxed">
+                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">PCB & Hardware Prototyping</h3>
+                <p class="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-4">Altium Designer • Proteus</p>
+                <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
                     Experienced in circuit board layout, chemical etching, glossy transfer printing, and building
                     functional microcontroller-based robotics and power systems.
                 </p>
@@ -131,330 +165,833 @@
         </div>
     </section>
 
-    <!-- Skills & Experience Section -->
-    <section id="skills" class="max-w-6xl mx-auto px-6 py-20 border-t border-gray-100">
-        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
-            <div>
-                <h2 class="serif-heading text-3xl sm:text-4xl font-normal text-gray-900 mb-2">Skills & Experience</h2>
-                <p class="text-gray-500 text-sm">Filter through core competencies, hardware tools, and organizations.
+    <!-- Experience Section -->
+    <section id="experience" class="max-w-6xl mx-auto px-6 py-20 border-t border-gray-100 dark:border-gray-900">
+        <h2 class="serif-heading text-3xl sm:text-4xl font-normal text-gray-900 dark:text-white mb-12">Experience</h2>
+
+        <div class="space-y-8">
+            <!-- Experience 1 -->
+            <div
+                class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 p-8 rounded-3xl shadow-sm hover:shadow-md transition">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4">
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">R&D Intern (Embedded Systems &
+                            Hardware Development)</h3>
+                        <p class="text-sm font-semibold text-blue-600 dark:text-blue-400 mt-1">Skypower Pvt Ltd ·
+                            Internship</p>
+                    </div>
+                    <span
+                        class="text-xs font-medium text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-800 px-3 py-1.5 rounded-full mt-2 sm:mt-0 self-start">Jun
+                        2026 - Present · 4 mos</span>
+                </div>
+                <p class="text-xs text-gray-400 dark:text-gray-500 mb-4">Lahore, Punjab, Pakistan · On-site</p>
+                <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4">
+                    Working on Printed Circuit Board (PCB) Design using Altium Designer, hardware prototyping, reverse
+                    engineering boards, laser-based PCB fabrication, and developing embedded systems like RFID-based
+                    ESP32 solutions, Secondary Current Injection machines, and Trip Circuit Supervision (TCS) relays.
                 </p>
-            </div>
-            <!-- Grid / List View Toggle -->
-            <div class="flex items-center space-x-2 bg-gray-100 p-1.5 rounded-xl self-start">
-                <button id="gridViewBtn" onclick="setViewMode('grid')"
-                    class="px-3 py-1.5 bg-white text-black text-xs font-semibold rounded-lg shadow-sm transition">Grid</button>
-                <button id="listViewBtn" onclick="setViewMode('list')"
-                    class="px-3 py-1.5 text-gray-600 text-xs font-semibold rounded-lg hover:text-black transition">List</button>
-            </div>
-        </div>
-
-        <!-- Search Bar -->
-        <div class="mb-8">
-            <input type="text" id="searchInput" onkeyup="filterSkills()"
-                placeholder="Search embedded, electrical, electronics, IEEE, Skypower..."
-                class="w-full border border-gray-200 bg-white rounded-2xl px-5 py-3.5 text-sm focus:outline-none focus:border-black transition shadow-sm">
-        </div>
-
-        <!-- Filter Buttons -->
-        <div class="flex flex-wrap gap-3 mb-10">
-            <button onclick="filterCategory('all')"
-                class="filter-btn bg-black text-white px-4 py-2 rounded-xl text-xs font-semibold transition">All</button>
-            <button onclick="filterCategory('embedded')"
-                class="filter-btn bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-2 rounded-xl text-xs font-semibold transition">Embedded</button>
-            <button onclick="filterCategory('electrical')"
-                class="filter-btn bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-2 rounded-xl text-xs font-semibold transition">Electrical</button>
-            <button onclick="filterCategory('electronics')"
-                class="filter-btn bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-2 rounded-xl text-xs font-semibold transition">Electronics</button>
-            <button onclick="filterCategory('ieee')"
-                class="filter-btn bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-2 rounded-xl text-xs font-semibold transition">IEEE</button>
-            <button onclick="filterCategory('skypower')"
-                class="filter-btn bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-2 rounded-xl text-xs font-semibold transition">Skypower</button>
-        </div>
-
-        <!-- Skills & Experience Container -->
-        <div id="skillsContainer" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-
-            <div class="skill-card bg-white border border-gray-200 p-6 rounded-2xl shadow-sm hover:border-black transition"
-                data-category="embedded">
-                <span class="text-[10px] bg-blue-50 text-blue-600 font-semibold px-2.5 py-1 rounded-md">Embedded</span>
-                <h3 class="font-bold text-gray-900 mt-3 text-base">ESP32 & Microcontrollers</h3>
-                <p class="text-xs text-gray-500 mt-1">Firmware development & peripheral interfacing.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span
+                        class="text-[10px] bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 font-semibold px-2.5 py-1 rounded-md">PCB
+                        Design</span>
+                    <span
+                        class="text-[10px] bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 font-semibold px-2.5 py-1 rounded-md">Altium
+                        Designer</span>
+                    <span
+                        class="text-[10px] bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 font-semibold px-2.5 py-1 rounded-md">Embedded
+                        Systems</span>
+                    <span
+                        class="text-[10px] bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 font-semibold px-2.5 py-1 rounded-md">Hardware
+                        Development</span>
+                </div>
             </div>
 
-            <div class="skill-card bg-white border border-gray-200 p-6 rounded-2xl shadow-sm hover:border-black transition"
-                data-category="electronics">
-                <span
-                    class="text-[10px] bg-emerald-50 text-emerald-600 font-semibold px-2.5 py-1 rounded-md">Electronics</span>
-                <h3 class="font-bold text-gray-900 mt-3 text-base">Altium Designer</h3>
-                <p class="text-xs text-gray-500 mt-1">Schematics and double-sided PCB layout.</p>
+            <!-- Experience 2 -->
+            <div
+                class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 p-8 rounded-3xl shadow-sm hover:shadow-md transition">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4">
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">Campus Ambassador</h3>
+                        <p class="text-sm font-semibold text-blue-600 dark:text-blue-400 mt-1">Embeduino Labs · Contract
+                        </p>
+                    </div>
+                    <span
+                        class="text-xs font-medium text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-800 px-3 py-1.5 rounded-full mt-2 sm:mt-0 self-start">May
+                        2026 - Present · 5 mos</span>
+                </div>
+                <p class="text-xs text-gray-400 dark:text-gray-500 mb-4">Lahore District, Punjab, Pakistan · Hybrid</p>
+                <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4">
+                    Supporting students interested in embedded systems by addressing their challenges and enhancing
+                    their learning experience. Facilitating workshops and providing tailored guidance to help students
+                    navigate their projects effectively.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span
+                        class="text-[10px] bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 font-semibold px-2.5 py-1 rounded-md">Brand
+                        Ambassador Training</span>
+                    <span
+                        class="text-[10px] bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 font-semibold px-2.5 py-1 rounded-md">Embedded
+                        Systems</span>
+                    <span
+                        class="text-[10px] bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 font-semibold px-2.5 py-1 rounded-md">Community
+                        Engagement</span>
+                </div>
             </div>
 
-            <div class="skill-card bg-white border border-gray-200 p-6 rounded-2xl shadow-sm hover:border-black transition"
-                data-category="electronics">
-                <span
-                    class="text-[10px] bg-emerald-50 text-emerald-600 font-semibold px-2.5 py-1 rounded-md">Electronics</span>
-                <h3 class="font-bold text-gray-900 mt-3 text-base">Proteus Simulation</h3>
-                <p class="text-xs text-gray-500 mt-1">Circuit testing and microcontroller validation.</p>
+            <!-- Experience 3 -->
+            <div
+                class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 p-8 rounded-3xl shadow-sm hover:shadow-md transition">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4">
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">Director</h3>
+                        <p class="text-sm font-semibold text-blue-600 dark:text-blue-400 mt-1">IEEE UET LHR New Campus ·
+                            Part-time</p>
+                    </div>
+                    <span
+                        class="text-xs font-medium text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-800 px-3 py-1.5 rounded-full mt-2 sm:mt-0 self-start">Jan
+                        2026 - Present · 9 mos</span>
+                </div>
+                <p class="text-xs text-gray-400 dark:text-gray-500 mb-4">UET Lahore New Campus · On-site</p>
+                <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4">
+                    Managing technical events, workshops, and fostering a collaborative technical environment for
+                    engineering students. (Previously served as Deputy Director from Aug 2024 - Feb 2026).
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span
+                        class="text-[10px] bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 font-semibold px-2.5 py-1 rounded-md">Event
+                        Management</span>
+                    <span
+                        class="text-[10px] bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 font-semibold px-2.5 py-1 rounded-md">Technical
+                        Leadership</span>
+                    <span
+                        class="text-[10px] bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 font-semibold px-2.5 py-1 rounded-md">Community
+                        Engagement</span>
+                </div>
             </div>
-
-            <div class="skill-card bg-white border border-gray-200 p-6 rounded-2xl shadow-sm hover:border-black transition"
-                data-category="electrical">
-                <span
-                    class="text-[10px] bg-amber-50 text-amber-600 font-semibold px-2.5 py-1 rounded-md">Electrical</span>
-                <h3 class="font-bold text-gray-900 mt-3 text-base">Variable Power Supply</h3>
-                <p class="text-xs text-gray-500 mt-1">Design and physical chemical PCB etching.</p>
-            </div>
-
-            <div class="skill-card bg-white border border-gray-200 p-6 rounded-2xl shadow-sm hover:border-black transition"
-                data-category="ieee">
-                <span class="text-[10px] bg-purple-50 text-purple-600 font-semibold px-2.5 py-1 rounded-md">IEEE</span>
-                <h3 class="font-bold text-gray-900 mt-3 text-base">IEEE Technical Member</h3>
-                <p class="text-xs text-gray-500 mt-1">Participating in engineering workshops & symposiums.</p>
-            </div>
-
-            <div class="skill-card bg-white border border-gray-200 p-6 rounded-2xl shadow-sm hover:border-black transition"
-                data-category="skypower">
-                <span
-                    class="text-[10px] bg-indigo-50 text-indigo-600 font-semibold px-2.5 py-1 rounded-md">Skypower</span>
-                <h3 class="font-bold text-gray-900 mt-3 text-base">Skypower Initiative</h3>
-                <p class="text-xs text-gray-500 mt-1">Renewable energy and power system studies.</p>
-            </div>
-
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="max-w-6xl mx-auto px-6 py-20 border-t border-gray-100">
-        <div class="flex items-center justify-between mb-12">
-            <div>
-                <h2 class="serif-heading text-3xl sm:text-4xl font-normal text-gray-900 mb-2">Featured Projects</h2>
-                <p class="text-gray-500 text-sm">Hardware prototypes, robotics, and firmware applications.</p>
-            </div>
-            <!-- Click to See Work Button -->
-            <a href="#projects"
-                class="border border-gray-300 hover:border-black px-5 py-2.5 rounded-full text-xs font-semibold text-gray-800 transition flex items-center space-x-2">
-                <span>(^___^) Click to see work</span>
-            </a>
-        </div>
+    <section id="projects" class="max-w-6xl mx-auto px-6 py-20 border-t border-gray-100 dark:border-gray-900">
+        <h2 class="serif-heading text-3xl sm:text-4xl font-normal text-gray-900 dark:text-white mb-12">Featured Projects
+        </h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Project 1 -->
             <div
-                class="bg-white border border-gray-200/80 rounded-3xl p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 rounded-3xl p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between">
                 <div>
                     <div
-                        class="w-full h-48 bg-gray-100 rounded-2xl mb-6 overflow-hidden border border-gray-100 flex items-center justify-center text-gray-400 text-xs font-medium">
-                        <img src="https://images.unsplash.com/photo-1555680202-c86f0e12f086?auto=format&fit=crop&w=600&q=80"
-                            alt="Robot Preview" class="w-full h-full object-cover">
+                        class="w-full h-48 bg-gray-100 dark:bg-gray-800 rounded-2xl mb-6 overflow-hidden border border-gray-100 dark:border-gray-700">
+                        <img src="pics/digital-clock.png" alt="Digital Clock Preview"
+                            class="w-full h-full object-cover">
                     </div>
-                    <span class="text-[10px] bg-blue-50 text-blue-600 font-semibold px-2.5 py-1 rounded-md">Embedded
-                        Systems</span>
-                    <h3 class="serif-heading text-xl font-bold text-gray-900 mt-3 mb-2">ESP32 Object Detection Robot
-                    </h3>
-                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
-                        Autonomous navigation robot powered by an ESP32 microcontroller and ultrasonic sensors,
-                        programmed via bare-metal C++ firmware.
+                    <span
+                        class="text-[10px] bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-400 font-semibold px-2.5 py-1 rounded-md">Digital
+                        Logic & Hardware</span>
+                    <h3 class="serif-heading text-xl font-bold text-gray-900 dark:text-white mt-3 mb-2">24-Hour Digital
+                        Clock & Stopwatch</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
+                        Designed, simulated, and fabricated a fully functional 24-Hour Digital Clock & Dual-Mode
+                        Stopwatch entirely from scratch using discrete 74-series ICs (NE555 timer, 74LS90 decade
+                        counters, 74LS47 decoders) with zero microcontrollers or firmware.
                     </p>
                 </div>
-                <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                <div class="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-800">
                     <span class="text-xs text-gray-400">UET Lahore Project</span>
-                    <a href="https://github.com/EngrShehrozAkhterCh" target="_blank"
-                        class="bg-black text-white px-4 py-2 rounded-xl text-xs font-semibold hover:bg-gray-800 transition">View
-                        on GitHub &rarr;</a>
+                    <a href="https://www.linkedin.com/posts/activity-7473032879971713024-ozny?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFH-CHMBGchTZMudSO3RssSKa5VOyeCMsIE"
+                        target="_blank"
+                        class="bg-black dark:bg-white text-white dark:text-black px-4 py-2 rounded-xl text-xs font-semibold hover:bg-gray-800 dark:hover:bg-gray-200 transition">View
+                        on LinkedIn &rarr;</a>
                 </div>
             </div>
 
             <!-- Project 2 -->
             <div
-                class="bg-white border border-gray-200/80 rounded-3xl p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 rounded-3xl p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between">
                 <div>
                     <div
-                        class="w-full h-48 bg-gray-100 rounded-2xl mb-6 overflow-hidden border border-gray-100 flex items-center justify-center text-gray-400 text-xs font-medium">
-                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80"
-                            alt="PCB Preview" class="w-full h-full object-cover">
+                        class="w-full h-48 bg-gray-100 dark:bg-gray-800 rounded-2xl mb-6 overflow-hidden border border-gray-100 dark:border-gray-700">
+                        <img src="pics/bldc-motor.jpeg" alt="BLDC Motor Preview" class="w-full h-full object-cover">
                     </div>
                     <span
-                        class="text-[10px] bg-emerald-50 text-emerald-600 font-semibold px-2.5 py-1 rounded-md">Electrical
-                        Hardware</span>
-                    <h3 class="serif-heading text-xl font-bold text-gray-900 mt-3 mb-2">Custom Variable Power Supply
-                    </h3>
-                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
-                        Double-sided PCB designed in Altium Designer, chemically etched and assembled with thermal
-                        protection circuitry.
+                        class="text-[10px] bg-emerald-50 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400 font-semibold px-2.5 py-1 rounded-md">Power
+                        Electronics</span>
+                    <h3 class="serif-heading text-xl font-bold text-gray-900 dark:text-white mt-3 mb-2">3-Phase BLDC
+                        Motor (From Scratch)</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
+                        Designed and built a 3-phase Brushless DC motor with Star (Y) connection, wound stator coils
+                        using 28-AWG copper wire (120 turns/phase), permanent magnet rotor using neodymium magnets, and
+                        integrated ESC control.
                     </p>
                 </div>
-                <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                <div class="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-800">
                     <span class="text-xs text-gray-400">Hardware Prototype</span>
-                    <a href="https://github.com/EngrShehrozAkhterCh" target="_blank"
-                        class="bg-black text-white px-4 py-2 rounded-xl text-xs font-semibold hover:bg-gray-800 transition">View
-                        on GitHub &rarr;</a>
+                    <a href="https://www.linkedin.com/posts/activity-7426626466085285888-QvX_?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFH-CHMBGchTZMudSO3RssSKa5VOyeCMsIE"
+                        target="_blank"
+                        class="bg-black dark:bg-white text-white dark:text-black px-4 py-2 rounded-xl text-xs font-semibold hover:bg-gray-800 dark:hover:bg-gray-200 transition">View
+                        on LinkedIn &rarr;</a>
                 </div>
             </div>
 
+            <!-- Project 3 -->
+            <div
+                class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 rounded-3xl p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <div
+                        class="w-full h-48 bg-gray-100 dark:bg-gray-800 rounded-2xl mb-6 overflow-hidden border border-gray-100 dark:border-gray-700">
+                        <img src="pics/power-supply.png" alt="Power Supply Preview" class="w-full h-full object-cover">
+                    </div>
+                    <span
+                        class="text-[10px] bg-amber-50 dark:bg-amber-950 text-amber-600 dark:text-amber-400 font-semibold px-2.5 py-1 rounded-md">Analog
+                        Electronics</span>
+                    <h3 class="serif-heading text-xl font-bold text-gray-900 dark:text-white mt-3 mb-2">Variable DC
+                        Power Supply (0-16 V)</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
+                        Completed a hands-on electronics project using an LM317 regulator, 220V AC input, rectification
+                        and filtering techniques, ripple voltage calculation, and thermal considerations.
+                    </p>
+                </div>
+                <div class="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-800">
+                    <span class="text-xs text-gray-400">Hardware Implementation</span>
+                    <a href="https://www.linkedin.com/posts/activity-7422297546179555328-tcBq?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFH-CHMBGchTZMudSO3RssSKa5VOyeCMsIE"
+                        target="_blank"
+                        class="bg-black dark:bg-white text-white dark:text-black px-4 py-2 rounded-xl text-xs font-semibold hover:bg-gray-800 dark:hover:bg-gray-200 transition">View
+                        on LinkedIn &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div
+                class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 rounded-3xl p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <div
+                        class="w-full h-48 bg-gray-100 dark:bg-gray-800 rounded-2xl mb-6 overflow-hidden border border-gray-100 dark:border-gray-700">
+                        <img src="pics/ripple-adder.jpeg" alt="PCB Preview" class="w-full h-full object-cover">
+                    </div>
+                    <span
+                        class="text-[10px] bg-purple-50 dark:bg-purple-950 text-purple-600 dark:text-purple-400 font-semibold px-2.5 py-1 rounded-md">PCB
+                        Design & Logic</span>
+                    <h3 class="serif-heading text-xl font-bold text-gray-900 dark:text-white mt-3 mb-2">4-bit Ripple
+                        Carry Adder PCB</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
+                        Designed in EasyEDA using CD74HC283E adder IC, push-button inputs, LM7805 voltage regulator, and
+                        manual trace routing on a 2-layer board with full Proteus simulation and hand soldering.
+                    </p>
+                </div>
+                <div class="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-800">
+                    <span class="text-xs text-gray-400">UET Lahore Project</span>
+                    <a href="https://www.linkedin.com/posts/activity-7455562603226886144-plGA?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFH-CHMBGchTZMudSO3RssSKa5VOyeCMsIE"
+                        target="_blank"
+                        class="bg-black dark:bg-white text-white dark:text-black px-4 py-2 rounded-xl text-xs font-semibold hover:bg-gray-800 dark:hover:bg-gray-200 transition">View
+                        on LinkedIn &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div
+                class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 rounded-3xl p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <div
+                        class="w-full h-48 bg-gray-100 dark:bg-gray-800 rounded-2xl mb-6 overflow-hidden border border-gray-100 dark:border-gray-700">
+                        <img src="pics/sci-machine.jpeg" alt="SCI Machine Preview" class="w-full h-full object-cover">
+                    </div>
+                    <span
+                        class="text-[10px] bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-400 font-semibold px-2.5 py-1 rounded-md">Industrial
+                        R&D</span>
+                    <h3 class="serif-heading text-xl font-bold text-gray-900 dark:text-white mt-3 mb-2">Secondary
+                        Current Injection (SCI) Machine</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
+                        Contributed to the design, construction, and assembly of a Secondary Current Injection machine
+                        during R&D internship at Skypower. Explored transformer and capacitor banks, high-power NPN/PNP
+                        transistors, thermal heat sinking, and 3-phase board integration.
+                    </p>
+                </div>
+                <div class="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-800">
+                    <span class="text-xs text-gray-400">Skypower R&D Internship</span>
+                    <a href="https://www.linkedin.com/posts/activity-7495132420803825666-R0LX?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFH-CHMBGchTZMudSO3RssSKa5VOyeCMsIE"
+                        target="_blank"
+                        class="bg-black dark:bg-white text-white dark:text-black px-4 py-2 rounded-xl text-xs font-semibold hover:bg-gray-800 dark:hover:bg-gray-200 transition">View
+                        on LinkedIn &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div
+                class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 rounded-3xl p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <div
+                        class="w-full h-48 bg-gray-100 dark:bg-gray-800 rounded-2xl mb-6 overflow-hidden border border-gray-100 dark:border-gray-700">
+                        <img src="pics/tcs-relay.jpeg" alt="TCS Relay Preview" class="w-full h-full object-cover">
+                    </div>
+                    <span
+                        class="text-[10px] bg-emerald-50 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400 font-semibold px-2.5 py-1 rounded-md">Electrical
+                        Protection</span>
+                    <h3 class="serif-heading text-xl font-bold text-gray-900 dark:text-white mt-3 mb-2">Trip Circuit
+                        Supervision (TCS) Relay</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
+                        Explored industrial electrical protection systems by studying how a TCS relay continuously
+                        monitors trip circuit health, continuity, and signal paths under various operational and fault
+                        conditions.
+                    </p>
+                </div>
+                <div class="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-800">
+                    <span class="text-xs text-gray-400">Skypower R&D Internship</span>
+                    <a href="https://www.linkedin.com/posts/activity-7494411334361440256-BBx7?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFH-CHMBGchTZMudSO3RssSKa5VOyeCMsIE"
+                        target="_blank"
+                        class="bg-black dark:bg-white text-white dark:text-black px-4 py-2 rounded-xl text-xs font-semibold hover:bg-gray-800 dark:hover:bg-gray-200 transition">View
+                        on LinkedIn &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Project 7 -->
+            <div
+                class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 rounded-3xl p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <div
+                        class="w-full h-48 bg-gray-100 dark:bg-gray-800 rounded-2xl mb-6 overflow-hidden border border-gray-100 dark:border-gray-700">
+                        <img src="pics/rfid-esp32.jpeg" alt="RFID ESP32 Preview" class="w-full h-full object-cover">
+                    </div>
+                    <span
+                        class="text-[10px] bg-indigo-50 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 font-semibold px-2.5 py-1 rounded-md">Embedded
+                        IoT System</span>
+                    <h3 class="serif-heading text-xl font-bold text-gray-900 dark:text-white mt-3 mb-2">RFID-Based ESP32
+                        Embedded System</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
+                        Integrated an RFID reader, ESP32 microcontroller, TFT display, relay, buzzer, and custom PCB to
+                        create a functional prototype where card scans trigger real-time system feedback.
+                    </p>
+                </div>
+                <div class="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-800">
+                    <span class="text-xs text-gray-400">Skypower R&D Internship</span>
+                    <a href="https://www.linkedin.com/posts/activity-7493686557933998080-WZ8p?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFH-CHMBGchTZMudSO3RssSKa5VOyeCMsIE"
+                        target="_blank"
+                        class="bg-black dark:bg-white text-white dark:text-black px-4 py-2 rounded-xl text-xs font-semibold hover:bg-gray-800 dark:hover:bg-gray-200 transition">View
+                        on LinkedIn &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Project 8 -->
+            <div
+                class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 rounded-3xl p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <div
+                        class="w-full h-48 bg-gray-100 dark:bg-gray-800 rounded-2xl mb-6 overflow-hidden border border-gray-100 dark:border-gray-700">
+                        <img src="pics/laser-pcb.jpeg" alt="Laser PCB Preview" class="w-full h-full object-cover">
+                    </div>
+                    <span
+                        class="text-[10px] bg-emerald-50 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400 font-semibold px-2.5 py-1 rounded-md">Hardware
+                        Manufacturing</span>
+                    <h3 class="serif-heading text-xl font-bold text-gray-900 dark:text-white mt-3 mb-2">Laser-Based PCB
+                        Fabrication</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
+                        Gained hands-on experience converting digital PCB layouts into physical boards using AutoCAD
+                        file preparation, laser processing, copper removal, and trace electrical isolation.
+                    </p>
+                </div>
+                <div class="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-800">
+                    <span class="text-xs text-gray-400">Skypower R&D Internship</span>
+                    <a href="https://www.linkedin.com/posts/activity-7492233235217715200-MFHq?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFH-CHMBGchTZMudSO3RssSKa5VOyeCMsIE"
+                        target="_blank"
+                        class="bg-black dark:bg-white text-white dark:text-black px-4 py-2 rounded-xl text-xs font-semibold hover:bg-gray-800 dark:hover:bg-gray-200 transition">View
+                        on LinkedIn &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Project 9 -->
+            <div
+                class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 rounded-3xl p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <div
+                        class="w-full h-48 bg-gray-100 dark:bg-gray-800 rounded-2xl mb-6 overflow-hidden border border-gray-100 dark:border-gray-700">
+                        <img src="pics/high-voltage-detector..jpeg" alt="High Voltage Detector Preview"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <span
+                        class="text-[10px] bg-amber-50 dark:bg-amber-950 text-amber-600 dark:text-amber-400 font-semibold px-2.5 py-1 rounded-md">Hardware
+                        Reverse Engineering</span>
+                    <h3 class="serif-heading text-xl font-bold text-gray-900 dark:text-white mt-3 mb-2">High Voltage
+                        Detector PCB Reverse Engineering</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
+                        Analyzed an existing electronics board, traced circuit connections, reconstructed schematics,
+                        practiced SMD soldering and assembly, and performed thorough testing and debugging.
+                    </p>
+                </div>
+                <div class="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-800">
+                    <span class="text-xs text-gray-400">Skypower R&D Internship</span>
+                    <a href="https://www.linkedin.com/posts/activity-7492958061406371841-74zZ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFH-CHMBGchTZMudSO3RssSKa5VOyeCMsIE"
+                        target="_blank"
+                        class="bg-black dark:bg-white text-white dark:text-black px-4 py-2 rounded-xl text-xs font-semibold hover:bg-gray-800 dark:hover:bg-gray-200 transition">View
+                        on LinkedIn &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Project 10 -->
+            <div
+                class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 rounded-3xl p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <div
+                        class="w-full h-48 bg-gray-100 dark:bg-gray-800 rounded-2xl mb-6 overflow-hidden border border-gray-100 dark:border-gray-700">
+                        <img src="pics/logic-gates.jpeg" alt="Logic Gates Preview" class="w-full h-full object-cover">
+                    </div>
+                    <span
+                        class="text-[10px] bg-purple-50 dark:bg-purple-950 text-purple-600 dark:text-purple-400 font-semibold px-2.5 py-1 rounded-md">Digital
+                        Systems Lab</span>
+                    <h3 class="serif-heading text-xl font-bold text-gray-900 dark:text-white mt-3 mb-2">Half Adder &
+                        Full Adder Implementation</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
+                        Designed and implemented Half and Full Adders using only fundamental logic gates (NOT, AND, OR)
+                        to master gate-level realization, Boolean algebra, and truth table verification without direct
+                        XOR IC usage.
+                    </p>
+                </div>
+                <div class="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-800">
+                    <span class="text-xs text-gray-400">UET Lahore Lab Project</span>
+                    <a href="https://www.linkedin.com/posts/activity-7434200974967177216-zBtz?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFH-CHMBGchTZMudSO3RssSKa5VOyeCMsIE"
+                        target="_blank"
+                        class="bg-black dark:bg-white text-white dark:text-black px-4 py-2 rounded-xl text-xs font-semibold hover:bg-gray-800 dark:hover:bg-gray-200 transition">View
+                        on LinkedIn &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Project 11 -->
+            <div
+                class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 rounded-3xl p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between lg:col-span-2">
+                <div>
+                    <div
+                        class="w-full h-48 bg-gray-100 dark:bg-gray-800 rounded-2xl mb-6 overflow-hidden border border-gray-100 dark:border-gray-700">
+                        <img src="pics/power-factor.jpeg" alt="Power Factor Preview" class="w-full h-full object-cover">
+                    </div>
+                    <span
+                        class="text-[10px] bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-400 font-semibold px-2.5 py-1 rounded-md">Power
+                        Quality & Systems</span>
+                    <h3 class="serif-heading text-xl font-bold text-gray-900 dark:text-white mt-3 mb-2">Power Factor
+                        Correction & Harmonic Mitigation</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
+                        Complex Engineering Problem (CEP) report for EE-110 at UET Lahore. Addressed low power factor
+                        (0.69) and 7th harmonic distortion (~350 Hz) for PharmaSafe Ltd. using an 80 µF shunt capacitor
+                        bank and passive LC filter to achieve PF 0.96.
+                    </p>
+                </div>
+                <div class="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-800">
+                    <span class="text-xs text-gray-400">UET Lahore CEP Report</span>
+                    <a href="https://www.linkedin.com/posts/activity-7376954367561838592-oaud?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFH-CHMBGchTZMudSO3RssSKa5VOyeCMsIE"
+                        target="_blank"
+                        class="bg-black dark:bg-white text-white dark:text-black px-4 py-2 rounded-xl text-xs font-semibold hover:bg-gray-800 dark:hover:bg-gray-200 transition">View
+                        on LinkedIn &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="max-w-6xl mx-auto px-6 py-20 border-t border-gray-100 dark:border-gray-900">
+        <div class="text-center mb-12">
+            <span
+                class="mono-font text-xs text-emerald-600 dark:text-emerald-400 font-semibold tracking-wider uppercase bg-emerald-50 dark:bg-emerald-950 px-3 py-1 rounded-full inline-block mb-3">//
+                professional offerings</span>
+            <h2 class="serif-heading text-3xl sm:text-4xl font-normal text-gray-900 dark:text-white">My Services</h2>
+            <p class="text-gray-500 dark:text-gray-400 text-sm mt-2 max-w-xl mx-auto">Specialized engineering services
+                available for hire on Fiverr and direct contract.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Service 1 -->
+            <div
+                class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 p-6 rounded-3xl shadow-sm hover:border-black dark:hover:border-white transition flex flex-col justify-between">
+                <div>
+                    <div
+                        class="w-12 h-12 rounded-2xl bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-400 flex items-center justify-center font-bold mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">PCB Designing</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-xs leading-relaxed mb-6">
+                        Professional schematic capture, multi-layer board layout, component placement, and Gerber export
+                        using Altium Designer and EasyEDA.
+                    </p>
+                </div>
+                <a href="https://pro.fiverr.com/s/Q2YpP6p" target="_blank"
+                    class="w-full bg-emerald-600 hover:bg-emerald-700 text-white text-center text-xs font-semibold py-2.5 rounded-xl transition">
+                    Hire on Fiverr &rarr;
+                </a>
+            </div>
+
+            <!-- Service 2 -->
+            <div
+                class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 p-6 rounded-3xl shadow-sm hover:border-black dark:hover:border-white transition flex flex-col justify-between">
+                <div>
+                    <div
+                        class="w-12 h-12 rounded-2xl bg-purple-50 dark:bg-purple-950 text-purple-600 dark:text-purple-400 flex items-center justify-center font-bold mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Python & C/C++ Coding</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-xs leading-relaxed mb-6">
+                        Custom firmware development for microcontrollers (ESP32/Arduino) in C/C++, alongside Python
+                        scripts for automation, data processing, and scripting.
+                    </p>
+                </div>
+                <a href="https://pro.fiverr.com/s/Q2YpP6p" target="_blank"
+                    class="w-full bg-emerald-600 hover:bg-emerald-700 text-white text-center text-xs font-semibold py-2.5 rounded-xl transition">
+                    Hire on Fiverr &rarr;
+                </a>
+            </div>
+
+            <!-- Service 3 -->
+            <div
+                class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 p-6 rounded-3xl shadow-sm hover:border-black dark:hover:border-white transition flex flex-col justify-between">
+                <div>
+                    <div
+                        class="w-12 h-12 rounded-2xl bg-amber-50 dark:bg-amber-950 text-amber-600 dark:text-amber-400 flex items-center justify-center font-bold mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Circuit Design & Problem Solving
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-xs leading-relaxed mb-6">
+                        Analysis and resolution of complex electrical engineering problems, simulation troubleshooting
+                        in Proteus & Multisim, and power quality evaluations.
+                    </p>
+                </div>
+                <a href="https://pro.fiverr.com/s/Q2YpP6p" target="_blank"
+                    class="w-full bg-emerald-600 hover:bg-emerald-700 text-white text-center text-xs font-semibold py-2.5 rounded-xl transition">
+                    Hire on Fiverr &rarr;
+                </a>
+            </div>
+
+            <!-- Service 4 -->
+            <div
+                class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 p-6 rounded-3xl shadow-sm hover:border-black dark:hover:border-white transition flex flex-col justify-between">
+                <div>
+                    <div
+                        class="w-12 h-12 rounded-2xl bg-emerald-50 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-bold mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Project Guidance & Building</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-xs leading-relaxed mb-6">
+                        End-to-end guidance, documentation support, and physical hardware prototyping for student
+                        capstones and engineering projects.
+                    </p>
+                </div>
+                <a href="https://pro.fiverr.com/s/Q2YpP6p" target="_blank"
+                    class="w-full bg-emerald-600 hover:bg-emerald-700 text-white text-center text-xs font-semibold py-2.5 rounded-xl transition">
+                    Hire on Fiverr &rarr;
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="max-w-6xl mx-auto px-6 py-20 border-t border-gray-100 dark:border-gray-900">
+        <h2 class="serif-heading text-3xl sm:text-4xl font-normal text-gray-900 dark:text-white mb-12">Education</h2>
+
+        <div
+            class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 p-8 rounded-3xl shadow-sm hover:shadow-md transition">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4">
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">University of Engineering and Technology
+                        (UET), Lahore</h3>
+                    <p class="text-sm font-semibold text-blue-600 dark:text-blue-400 mt-1">Bachelor of Science in
+                        Electrical Engineering</p>
+                </div>
+                <span
+                    class="text-xs font-medium text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-800 px-3 py-1.5 rounded-full mt-2 sm:mt-0 self-start">2024
+                    - 2028 (Expected)</span>
+            </div>
+            <p class="text-xs text-gray-400 dark:text-gray-500 mb-4">New Campus, Lahore · 4th Semester Completed</p>
+            <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+                Specializing in firmware, embedded systems, and hardware-software co-design. Active member of IEEE UET
+                Lahore and participant in industrial visits (Tarbela Dam, 220 kV Grid Station NGC).
+            </p>
+        </div>
+    </section>
+
+    <!-- Centered Toggle Button for Software Knowledge & Engineering Tools -->
+    <div class="max-w-6xl mx-auto px-6 pb-6 text-center">
+        <button onclick="toggleSoftwareKnowledge()" id="showSoftwareBtn"
+            class="bg-white hover:bg-black dark:bg-gray-900 dark:hover:bg-white text-gray-900 hover:text-white dark:text-white dark:hover:text-black border border-gray-300 dark:border-gray-700 px-6 py-3 rounded-full text-xs font-semibold transition shadow-sm inline-flex items-center space-x-2">
+            <span>Click to see software knowledge</span>
+        </button>
+    </div>
+
+    <!-- Hidden Software Knowledge & Tools Section -->
+    <section id="software-knowledge"
+        class="max-w-6xl mx-auto px-6 py-12 border-t border-gray-100 dark:border-gray-900 hidden">
+        <div class="text-center mb-10">
+            <span
+                class="mono-font text-xs text-emerald-600 dark:text-emerald-400 font-semibold tracking-wider uppercase bg-emerald-50 dark:bg-emerald-950 px-3 py-1 rounded-full inline-block mb-3">//
+                toolkit & software proficiency</span>
+            <h2 class="serif-heading text-3xl sm:text-4xl font-normal text-gray-900 dark:text-white">Engineering
+                Software & Tools</h2>
+            <p class="text-gray-500 dark:text-gray-400 text-sm mt-2 max-w-xl mx-auto">Industry-standard tools and
+                software suites utilized across academic research, circuit simulation, and professional hardware
+                development.</p>
+        </div>
+
+        <div
+            class="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 p-8 rounded-3xl shadow-sm">
+            <img src="https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white"
+                alt="MATLAB" />
+            <img src="https://img.shields.io/badge/Multisim-0033A0?style=for-the-badge&logo=ni&logoColor=white"
+                alt="Multisim" />
+            <img src="https://img.shields.io/badge/Proteus-00979D?style=for-the-badge&logo=arduino&logoColor=white"
+                alt="Proteus" />
+            <img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white"
+                alt="Arduino" />
+            <img src="https://img.shields.io/badge/Vivado-E01F27?style=for-the-badge&logo=xilinx&logoColor=white"
+                alt="Vivado" />
+            <img src="https://img.shields.io/badge/NI%20ELVIS-0033A0?style=for-the-badge&logo=ni&logoColor=white"
+                alt="NI ELVIS" />
+            <img src="https://img.shields.io/badge/LabVIEW-FFDB00?style=for-the-badge&logo=ni&logoColor=black"
+                alt="LabVIEW" />
+            <img src="https://img.shields.io/badge/Tinkercad-F7931E?style=for-the-badge&logo=autodesk&logoColor=white"
+                alt="Tinkercad" />
+            <img src="https://img.shields.io/badge/Verilog-000000?style=for-the-badge&logo=verilog&logoColor=white"
+                alt="Verilog" />
+            <img src="https://img.shields.io/badge/Altium-FF0000?style=for-the-badge&logo=altium&logoColor=white"
+                alt="Altium" />
+            <img src="https://img.shields.io/badge/ChipDesign-0A74DA?style=for-the-badge&logo=none&logoColor=white"
+                alt="ChipDesign" />
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="max-w-6xl mx-auto px-6 py-20 border-t border-gray-100">
-        <h2 class="serif-heading text-3xl sm:text-4xl font-normal text-gray-900 mb-12">Get in Touch</h2>
+    <section id="contact" class="max-w-6xl mx-auto px-6 py-20 border-t border-gray-100 dark:border-gray-900">
+        <h2 class="serif-heading text-3xl sm:text-4xl font-normal text-gray-900 dark:text-white mb-12">Get in Touch</h2>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <!-- Working Formspree Form -->
-            <div class="bg-white border border-gray-200/80 p-8 rounded-3xl shadow-sm">
-                <h3 class="text-lg font-bold text-gray-900 mb-6">Send Me Message</h3>
+            <div
+                class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 p-8 rounded-3xl shadow-sm">
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-6">Send Me Message</h3>
                 <form action="https://formspree.io/f/xnpqgejy" method="POST" class="space-y-4">
                     <div>
                         <input type="text" name="name" placeholder="Your Name"
-                            class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-black transition"
+                            class="w-full border border-gray-200 dark:border-gray-700 bg-transparent rounded-xl px-4 py-3 text-sm text-gray-900 dark:text-white focus:outline-none focus:border-black dark:focus:border-white transition"
                             required>
                     </div>
                     <div>
                         <input type="email" name="email" placeholder="Your Email"
-                            class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-black transition"
+                            class="w-full border border-gray-200 dark:border-gray-700 bg-transparent rounded-xl px-4 py-3 text-sm text-gray-900 dark:text-white focus:outline-none focus:border-black dark:focus:border-white transition"
                             required>
                     </div>
                     <div>
                         <textarea rows="4" name="message" placeholder="Your Message"
-                            class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-black transition resize-none"
+                            class="w-full border border-gray-200 dark:border-gray-700 bg-transparent rounded-xl px-4 py-3 text-sm text-gray-900 dark:text-white focus:outline-none focus:border-black dark:focus:border-white transition resize-none"
                             required></textarea>
                     </div>
                     <button type="submit"
-                        class="w-full bg-black hover:bg-gray-800 text-white font-medium py-3 rounded-xl transition text-sm shadow-sm">
+                        class="w-full bg-black hover:bg-gray-800 dark:bg-white dark:hover:bg-gray-200 text-white dark:text-black font-medium py-3 rounded-xl transition text-sm shadow-sm">
                         Send Message
                     </button>
                 </form>
             </div>
 
-            <!-- Social Links Cards -->
+            <!-- Social Links Cards with Official Brand SVGs -->
             <div class="space-y-4">
                 <div
-                    class="bg-white border border-gray-200/80 p-5 rounded-2xl shadow-sm flex items-center justify-between">
+                    class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 p-5 rounded-2xl shadow-sm flex items-center justify-between">
                     <div class="flex items-center space-x-4">
                         <div
-                            class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center font-bold">
-                            in</div>
+                            class="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-400 flex items-center justify-center">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </div>
                         <div>
-                            <h4 class="font-bold text-gray-900 text-sm">LinkedIn</h4>
+                            <h4 class="font-bold text-gray-900 dark:text-white text-sm">LinkedIn</h4>
                             <a href="https://www.linkedin.com/in/muhammad-shehroz-akhter-52b82a324" target="_blank"
-                                class="text-xs text-gray-500 hover:underline">linkedin.com/in/muhammad-shehroz-akhter-52b82a324</a>
+                                class="text-xs text-gray-500 dark:text-gray-400 hover:underline">linkedin.com/in/muhammad-shehroz-akhter-52b82a324</a>
                         </div>
                     </div>
                     <a href="https://www.linkedin.com/in/muhammad-shehroz-akhter-52b82a324" target="_blank"
-                        class="text-xs bg-gray-100 hover:bg-black hover:text-white px-3 py-2 rounded-lg transition font-medium">Visit</a>
+                        class="text-xs bg-gray-100 dark:bg-gray-800 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black px-3 py-2 rounded-lg transition font-medium">Visit</a>
                 </div>
 
                 <div
-                    class="bg-white border border-gray-200/80 p-5 rounded-2xl shadow-sm flex items-center justify-between">
+                    class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 p-5 rounded-2xl shadow-sm flex items-center justify-between">
                     <div class="flex items-center space-x-4">
                         <div
-                            class="w-10 h-10 rounded-xl bg-gray-100 text-gray-900 flex items-center justify-center font-bold">
-                            gh</div>
+                            class="w-10 h-10 rounded-xl bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white flex items-center justify-center">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </div>
                         <div>
-                            <h4 class="font-bold text-gray-900 text-sm">GitHub</h4>
+                            <h4 class="font-bold text-gray-900 dark:text-white text-sm">GitHub</h4>
                             <a href="https://github.com/EngrShehrozAkhterCh" target="_blank"
-                                class="text-xs text-gray-500 hover:underline">github.com/EngrShehrozAkhterCh</a>
+                                class="text-xs text-gray-500 dark:text-gray-400 hover:underline">github.com/EngrShehrozAkhterCh</a>
                         </div>
                     </div>
                     <a href="https://github.com/EngrShehrozAkhterCh" target="_blank"
-                        class="text-xs bg-gray-100 hover:bg-black hover:text-white px-3 py-2 rounded-lg transition font-medium">Visit</a>
+                        class="text-xs bg-gray-100 dark:bg-gray-800 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black px-3 py-2 rounded-lg transition font-medium">Visit</a>
                 </div>
 
                 <div
-                    class="bg-white border border-gray-200/80 p-5 rounded-2xl shadow-sm flex items-center justify-between">
+                    class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 p-5 rounded-2xl shadow-sm flex items-center justify-between">
                     <div class="flex items-center space-x-4">
                         <div
-                            class="w-10 h-10 rounded-xl bg-pink-50 text-pink-600 flex items-center justify-center font-bold">
-                            ig</div>
+                            class="w-10 h-10 rounded-xl bg-pink-50 dark:bg-pink-950 text-pink-600 dark:text-pink-400 flex items-center justify-center">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </div>
                         <div>
-                            <h4 class="font-bold text-gray-900 text-sm">Instagram</h4>
+                            <h4 class="font-bold text-gray-900 dark:text-white text-sm">Instagram</h4>
                             <a href="https://www.instagram.com/shehroz_akhter_09" target="_blank"
-                                class="text-xs text-gray-500 hover:underline">instagram.com/shehroz_akhter_09</a>
+                                class="text-xs text-gray-500 dark:text-gray-400 hover:underline">instagram.com/shehroz_akhter_09</a>
                         </div>
                     </div>
                     <a href="https://www.instagram.com/shehroz_akhter_09" target="_blank"
-                        class="text-xs bg-gray-100 hover:bg-black hover:text-white px-3 py-2 rounded-lg transition font-medium">Visit</a>
+                        class="text-xs bg-gray-100 dark:bg-gray-800 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black px-3 py-2 rounded-lg transition font-medium">Visit</a>
                 </div>
 
                 <div
-                    class="bg-white border border-gray-200/80 p-5 rounded-2xl shadow-sm flex items-center justify-between">
+                    class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 p-5 rounded-2xl shadow-sm flex items-center justify-between">
                     <div class="flex items-center space-x-4">
                         <div
-                            class="w-10 h-10 rounded-xl bg-blue-50 text-blue-500 flex items-center justify-center font-bold">
-                            fb</div>
+                            class="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-950 text-blue-500 flex items-center justify-center">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                            </svg>
+                        </div>
                         <div>
-                            <h4 class="font-bold text-gray-900 text-sm">Facebook</h4>
+                            <h4 class="font-bold text-gray-900 dark:text-white text-sm">Facebook</h4>
                             <a href="https://www.facebook.com/share/1DEeawQQRo/" target="_blank"
-                                class="text-xs text-gray-500 hover:underline">facebook.com/share/1DEeawQQRo/</a>
+                                class="text-xs text-gray-500 dark:text-gray-400 hover:underline">facebook.com/share/1DEeawQQRo/</a>
                         </div>
                     </div>
                     <a href="https://www.facebook.com/share/1DEeawQQRo/" target="_blank"
-                        class="text-xs bg-gray-100 hover:bg-black hover:text-white px-3 py-2 rounded-lg transition font-medium">Visit</a>
+                        class="text-xs bg-gray-100 dark:bg-gray-800 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black px-3 py-2 rounded-lg transition font-medium">Visit</a>
                 </div>
             </div>
     </section>
 
-    <!-- Working Footer -->
-    <footer class="border-t border-gray-200 bg-white py-12 mt-12">
-        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
-            <div>
-                <p class="font-bold text-gray-900 text-base">Muhammad Shehroz Akhter</p>
-                <p class="text-xs text-gray-500">Embedded Systems & Firmware Engineer • UET Lahore</p>
+    <!-- Custom Footer matched to reference layout -->
+    <footer
+        class="border-t border-gray-200 dark:border-gray-900 bg-white dark:bg-gray-950 py-12 mt-12 transition-colors duration-300">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 mb-8">
+                <div>
+                    <p class="font-bold text-gray-900 dark:text-white text-lg">Muhammad Shehroz Akhter</p>
+                    <p class="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Embedded Systems & Firmware Engineer</p>
+                </div>
+
+                <div class="flex items-center space-x-8 text-sm font-medium text-gray-600 dark:text-gray-300">
+                    <a href="#home" class="hover:text-black dark:hover:text-white transition">Home</a>
+                    <a href="#about" class="hover:text-black dark:hover:text-white transition">About</a>
+                    <a href="#experience" class="hover:text-black dark:hover:text-white transition">Experience</a>
+                    <a href="#projects" class="hover:text-black dark:hover:text-white transition">Projects</a>
+                    <a href="#services" class="hover:text-black dark:hover:text-white transition">Services</a>
+                    <a href="#education" class="hover:text-black dark:hover:text-white transition">Education</a>
+                    <a href="#contact" class="hover:text-black dark:hover:text-white transition">Contact</a>
+                </div>
             </div>
 
-            <div class="flex items-center space-x-6 text-sm font-medium text-gray-600">
-                <a href="#home" class="hover:text-black transition">Home</a>
-                <a href="#about" class="hover:text-black transition">About</a>
-                <a href="#projects" class="hover:text-black transition">Projects</a>
-                <a href="#contact" class="hover:text-black transition">Contact</a>
-            </div>
+            <div
+                class="border-t border-gray-100 dark:border-gray-900 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
+                <p class="text-xs text-gray-400 dark:text-gray-500">© 2026 Muhammad Shehroz Akhter. All rights reserved.
 
-            <div class="flex items-center space-x-4 text-xs font-semibold text-gray-600">
-                <a href="mailto:shehrozakhter7172@gmail.com" class="hover:text-black transition">Email</a>
-                <a href="https://github.com/EngrShehrozAkhterCh" target="_blank"
-                    class="hover:text-black transition">GitHub</a>
-                <a href="https://www.linkedin.com/in/muhammad-shehroz-akhter-52b82a324" target="_blank"
-                    class="hover:text-black transition">LinkedIn</a>
+
+                <div class="flex items-center space-x-6 text-xs font-semibold text-gray-600 dark:text-gray-400">
+                    <a href="mailto:shehrozakhter7172@gmail.com"
+                        class="hover:text-black dark:hover:text-white transition">Email</a>
+                    <a href="https://github.com/EngrShehrozAkhterCh" target="_blank"
+                        class="hover:text-black dark:hover:text-white transition">GitHub</a>
+                    <a href="https://www.linkedin.com/in/muhammad-shehroz-akhter-52b82a324" target="_blank"
+                        class="hover:text-black dark:hover:text-white transition">LinkedIn</a>
+                </div>
             </div>
-        </div>
-        <div
-            class="max-w-6xl mx-auto px-6 text-center md:text-left mt-8 pt-6 border-t border-gray-100 text-xs text-gray-400">
-            © 2026 Muhammad Shehroz Akhter. All rights reserved.
         </div>
     </footer>
 
     <!-- Corner Popup Banner -->
     <div id="devPopup"
-        class="fixed bottom-6 right-6 z-50 w-80 bg-white border border-gray-200 rounded-2xl shadow-2xl overflow-hidden transition-all duration-300">
-        <div class="bg-gray-50 px-4 py-2.5 border-b border-gray-100 flex items-center justify-between">
+        class="fixed bottom-6 right-6 z-50 w-80 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl shadow-2xl overflow-hidden transition-all duration-300">
+        <div
+            class="bg-gray-50 dark:bg-gray-800 px-4 py-2.5 border-b border-gray-100 dark:border-gray-700 flex items-center justify-between">
             <div class="flex items-center space-x-2">
                 <span class="w-2 h-2 rounded-full bg-emerald-500 inline-block"></span>
-                <span class="mono-font text-[11px] text-gray-500 tracking-wide">// portfolio.log</span>
+                <span class="mono-font text-[11px] text-gray-500 dark:text-gray-400 tracking-wide">//
+                    portfolio.log</span>
             </div>
             <button onclick="closePopup()"
-                class="text-gray-400 hover:text-gray-700 text-base font-bold focus:outline-none">&times;</button>
+                class="text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 text-base font-bold focus:outline-none">&times;</button>
         </div>
-        <div class="p-4 bg-white">
+        <div class="p-4 bg-white dark:bg-gray-900">
             <p class="mono-font text-[10px] tracking-wider text-gray-400 uppercase mb-2">WELCOME BACK, DEVELOPER!</p>
-            <p class="serif-heading text-sm text-gray-900 font-medium mb-3 italic">
+            <p class="serif-heading text-sm text-gray-900 dark:text-white font-medium mb-3 italic">
                 "Every circuit starts with a blank schematic."
             </p>
-            <div class="bg-gray-50 border border-gray-100 rounded-xl p-2.5 mb-4">
+            <div class="bg-gray-50 dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-xl p-2.5 mb-4">
                 <p class="mono-font text-[10px] text-gray-400">// status</p>
-                <p class="mono-font text-xs text-gray-700 font-medium mt-0.5">UET Lahore • Embedded Systems</p>
+                <p class="mono-font text-xs text-gray-700 dark:text-gray-300 font-medium mt-0.5">UET Lahore • Embedded
+                    Systems</p>
             </div>
             <a href="#contact"
-                class="block w-full bg-black hover:bg-gray-800 text-white text-center mono-font text-xs font-semibold py-2.5 rounded-xl transition shadow-sm">
+                class="block w-full bg-black hover:bg-gray-800 dark:bg-white dark:hover:bg-gray-200 text-white dark:text-black text-center mono-font text-xs font-semibold py-2.5 rounded-xl transition shadow-sm">
                 Let's Talk &rarr;
             </a>
         </div>
         <div
-            class="bg-gray-50 px-4 py-1.5 border-t border-gray-100 flex items-center justify-between mono-font text-[9px] text-gray-400">
+            class="bg-gray-50 dark:bg-gray-800 px-4 py-1.5 border-t border-gray-100 dark:border-gray-700 flex items-center justify-between mono-font text-[9px] text-gray-400">
             <span>building</span>
             <span>v2.0</span>
             <span>shehrozakhter.me</span>
         </div>
     </div>
+
+    <!-- Toggle Scripts for Theme and Software Knowledge -->
+    <script>
+        // Theme Toggle Logic
+        function toggleTheme() {
+            const html = document.documentElement;
+            if (html.classList.contains('dark')) {
+                html.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+            } else {
+                html.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+
+        // On page load or change, load theme from localStorage
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+
+        // Software Knowledge Toggle Logic
+        function toggleSoftwareKnowledge() {
+            const softwareSection = document.getElementById('software-knowledge');
+            const btn = document.getElementById('showSoftwareBtn');
+            if (softwareSection.classList.contains('hidden')) {
+                softwareSection.classList.remove('hidden');
+                btn.innerHTML = '<span>Click to hide software knowledge</span>';
+                btn.classList.add('bg-black', 'dark:bg-white', 'text-white', 'dark:text-black');
+                softwareSection.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                softwareSection.classList.add('hidden');
+                btn.innerHTML = '<span>Click to see software knowledge</span>';
+                btn.classList.remove('bg-black', 'dark:bg-white', 'text-white', 'dark:text-black');
+            }
+        }
+    </script>
 
     <!-- External JavaScript Link -->
     <script src="script.js"></script>
