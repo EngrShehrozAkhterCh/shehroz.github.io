@@ -1,0 +1,17 @@
+/* Custom Styles & Typography Support */
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #ffffff;
+    color: #111827;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+    background-size: 32px 32px;
+}
+
+.serif-heading {
+    font-family: 'Playfair Display', serif;
+}
+
+.mono-font {
+    font-family: 'JetBrains Mono', monospace;
+}
