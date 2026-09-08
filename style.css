@@ -17,6 +17,61 @@ html.dark body {
     background-size: auto, auto, 32px 32px, 32px 32px;
 }
 
+html.dark section:not(#home) {
+    position: relative;
+    isolation: isolate;
+}
+
+html.dark section:not(#home)::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    background: var(--section-bg, #0b0b0b);
+    z-index: -1;
+    pointer-events: none;
+}
+
+html.dark section:not(#home) > * {
+    position: relative;
+    z-index: 1;
+}
+
+html.dark section:not(#home) {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+html.dark #about {
+    --section-bg: #111827;
+}
+
+html.dark #experience {
+    --section-bg: #0f172a;
+}
+
+html.dark #projects {
+    --section-bg: #111827;
+}
+
+html.dark #services {
+    --section-bg: #1f2937;
+}
+
+html.dark #education {
+    --section-bg: #0b1220;
+}
+
+html.dark #software-knowledge {
+    --section-bg: #111827;
+}
+
+html.dark #contact {
+    --section-bg: #0f172a;
+}
+
 /* Render section top borders at full viewport width. */
 section.border-t {
     position: relative;
@@ -35,7 +90,7 @@ section.border-t::before {
 }
 
 html.dark section.border-t::before {
-    border-top-color: rgb(17 24 39);
+    border-top-color: rgba(255, 255, 255, 0.08);
 }
 
 .serif-heading {
@@ -48,7 +103,7 @@ html.dark section.border-t::before {
 
 /* Project image hover zoom */
 #projects img.object-cover {
-    transition: transform 0.35s ease;
+    transition: transform 300ms ease;
     cursor: pointer;
 }
 
