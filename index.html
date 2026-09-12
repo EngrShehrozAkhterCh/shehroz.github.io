@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muhammad Shehroz Akhter — Embedded Systems & Firmware Engineer</title>
+    <link rel="icon" href="pics/favicon.png?v=3" type="image/png" sizes="32x32">
+    <link rel="shortcut icon" href="pics/favicon.png?v=3" type="image/png">
+    <link rel="apple-touch-icon" href="pics/favicon.png?v=3">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -24,8 +27,8 @@
     class="bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black relative transition-colors duration-300">
 
     <!-- Header / Navbar -->
-    <header
-        class="sticky top-0 z-50 bg-white/80 dark:bg-gray-950/80 backdrop-blur-md border-b border-gray-100 dark:border-gray-800 transition-colors duration-300">
+    <header id="siteHeader"
+        class="sticky top-0 z-50 bg-transparent border-transparent transition-colors duration-300">
         <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
             <div class="flex items-center space-x-3">
                 <div
@@ -43,56 +46,64 @@
 
             <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-600 dark:text-gray-300">
                 <a href="#home"
-                    class="text-black dark:text-white border-b-2 border-black dark:border-white pb-1">Home</a>
-                <a href="#about" class="hover:text-black dark:hover:text-white transition">About</a>
+                class="text-black dark:text-white">Home</a>
                 <a href="#experience" class="hover:text-black dark:hover:text-white transition">Experience</a>
                 <a href="#projects" class="hover:text-black dark:hover:text-white transition">Projects</a>
                 <a href="#services" class="hover:text-black dark:hover:text-white transition">Services</a>
-                <a href="#education" class="hover:text-black dark:hover:text-white transition">Education</a>
                 <a href="#contact" class="hover:text-black dark:hover:text-white transition">Contact</a>
             </nav>
 
             <div class="flex items-center space-x-4">
                 <!-- Theme Toggle Button -->
-                <button onclick="toggleTheme()" aria-label="Toggle Theme"
-                    class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-900 transition">
-                    <!-- Sun Icon (Visible in Dark Mode) -->
-                    <svg id="sunIcon" class="w-5 h-5 hidden dark:block text-yellow-400" fill="none"
-                        stroke="currentColor" viewBox="0 0 24 24">
-                        <circle cx="12" cy="12" r="5" stroke-width="2" />
-                        <path stroke-linecap="round" stroke-width="2"
-                            d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
-                    </svg>
-                    <!-- Moon Icon (Visible in Light Mode) -->
-                    <svg id="moonIcon" class="w-5 h-5 block dark:hidden text-gray-700" fill="none" stroke="currentColor"
-                        viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
-                    </svg>
-                </button>
-
                 <a href="#contact"
-                    class="bg-black hover:bg-gray-800 dark:bg-white dark:hover:bg-gray-200 text-white dark:text-black text-sm font-medium px-5 py-2.5 rounded-full transition shadow-sm">
-                    Let's Talk
-                </a>
+                class="bg-black hover:bg-gray-800 dark:bg-white dark:hover:bg-gray-200 text-white dark:text-black text-sm font-medium px-5 py-2.5 rounded-full transition shadow-sm">
+                Let's Talk
+            </a>
+            <button onclick="toggleTheme()" aria-label="Toggle Theme"
+                class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-900 transition">
+                <!-- Sun Icon (Visible in Dark Mode) -->
+                <svg id="sunIcon" class="w-5 h-5 hidden dark:block text-white" fill="none"
+                    stroke="currentColor" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="5" stroke-width="2" />
+                    <path stroke-linecap="round" stroke-width="2"
+                        d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+                </svg>
+                <!-- Moon Icon (Visible in Light Mode) -->
+                <svg id="moonIcon" class="w-5 h-5 block dark:hidden text-gray-700" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+                </svg>
+            </button>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="max-w-6xl mx-auto px-6 pt-16 pb-24">
+    <section id="home" class="flex flex-col max-w-6xl mx-auto px-6 pt-10 sm:pt-12 pb-20 sm:pb-24">
         <div
-            class="inline-block bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-full px-3.5 py-1.5 text-xs font-semibold text-gray-600 dark:text-gray-300 tracking-wide uppercase mb-6">
+            class="inline-block w-fit bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-full px-3.5 py-1.5 text-xs font-semibold text-gray-600 dark:text-gray-300 tracking-wide uppercase mb-6">
             PORTFOLIO • 2026
         </div>
-        <h1
+        <div class="flex flex-col mb-6">
+            <h1
             class="serif-heading text-5xl sm:text-7xl lg:text-8xl font-normal tracking-tight text-gray-900 dark:text-white leading-[1.05] mb-6">
-            Muhammad <br /><span class="font-serif italic font-light">Shehroz Akhter</span>
+            Muhammad
         </h1>
-        <p class="text-xl sm:text-2xl font-medium text-blue-600 dark:text-blue-400 mb-6">
-            EE Student @ UET Lahore ’28 | R&D Intern @ SkyPower | Embedded Systems & Electronics Engineer | PCB ·
-            Arduino EasyEDA | IEEE Director | Exploring Embedded AI
-        </p>
+
+        <h1 class="serif-heading text-5xl sm:text-7xl lg:text-8xl font-normal tracking-tight text-gray-900 dark:text-white leading-[1.05] mb-6">Shehroz Akhter</h1>
+        <div
+            class="mb-8 max-w-3xl rounded-2xl border border-gray-200/70 dark:border-gray-800 bg-white/70 dark:bg-gray-900/60 backdrop-blur-sm p-5 sm:p-6 shadow-sm">
+            <p class="mono-font text-[10px] sm:text-xs font-semibold tracking-[0.35em] uppercase text-gray-500 dark:text-gray-400 mb-3">
+                Intro
+            </p>
+            <p class="text-base sm:text-lg font-medium leading-8 text-gray-700 dark:text-gray-300">
+                EE Student at UET Lahore ’28, R&amp;D Intern at SkyPower, and Embedded Systems / Electronics Engineer
+                focused on PCB design, Arduino, and EasyEDA while exploring Embedded AI.
+            </p>
+        </div>
+        </div>
+
 
 
         <div class="flex flex-wrap items-center gap-4">
@@ -121,11 +132,15 @@
         </div>
     </section>
 
+    <div class="w-full border-t border-gray-200 dark:border-gray-800"></div>
+
     <!-- About Me Section -->
-    <section id="about" class="max-w-6xl mx-auto px-6 py-20 border-t border-gray-100 dark:border-gray-900">
+    <section id="about" class="max-w-6xl mx-auto px-6 py-20">
+        <span
+            class="mono-font text-xs text-gray-500 dark:text-gray-300 tracking-wider uppercase inline-block mb-2">who i am</span>
         <h2 class="serif-heading text-3xl sm:text-4xl font-normal text-gray-900 dark:text-white mb-12">About Me</h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="space-y-8">
             <div
                 class="bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 p-8 rounded-3xl shadow-sm hover:shadow-md transition">
                 <div
@@ -164,6 +179,8 @@
 
     <!-- Experience Section -->
     <section id="experience" class="max-w-6xl mx-auto px-6 py-20 border-t border-gray-100 dark:border-gray-900">
+        <span
+            class="mono-font text-xs text-gray-500 dark:text-gray-300 tracking-wider uppercase inline-block mb-2">career timeline</span>
         <h2 class="serif-heading text-3xl sm:text-4xl font-normal text-gray-900 dark:text-white mb-12">Experience</h2>
 
         <div class="space-y-8">
@@ -270,10 +287,12 @@
 
     <!-- Projects Section (Featured Showcase Layout matching reference style) -->
     <section id="projects" class="max-w-6xl mx-auto px-6 py-20 border-t border-gray-100 dark:border-gray-900">
+        <span
+            class="mono-font text-xs text-gray-500 dark:text-gray-300 tracking-wider uppercase inline-block mb-2">selected work</span>
         <h2 class="serif-heading text-3xl sm:text-4xl font-normal text-gray-900 dark:text-white mb-16">Featured Projects
         </h2>
 
-        <div class="space-y-24">
+        <div id="projectsList" class="space-y-24">
             <!-- Project 1 -->
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 <div
@@ -723,7 +742,7 @@
                     class="lg:col-span-7 bg-gray-50 dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 rounded-3xl p-4 sm:p-6 shadow-sm overflow-hidden">
                     <div
                         class="w-full h-72 sm:h-96 rounded-2xl overflow-hidden border border-gray-200/60 dark:border-gray-700/60 bg-white dark:bg-gray-950">
-                        <img src="pics/power-factor.jpeg" alt="Power Factor Preview" class="w-full h-full object-cover">
+                        <img src="pics/power-factor.jpeg" alt="Power Factor Preview" class="w-full h-full object-cover hover:scale-105 transition-transform">
                     </div>
                 </div>
                 <div class="lg:col-span-5 space-y-6">
@@ -761,13 +780,20 @@
                 </div>
             </div>
         </div>
+
+        <div class="pt-12 text-center">
+            <button id="projectsToggleBtn"
+                class="bg-white hover:bg-black dark:bg-gray-900 dark:hover:bg-white text-gray-900 hover:text-white dark:text-white dark:hover:text-black border border-gray-300 dark:border-gray-700 px-6 py-3 rounded-full text-xs font-semibold transition shadow-sm inline-flex items-center">
+                Show More Projects
+            </button>
+        </div>
     </section>
 
     <!-- Services Section -->
     <section id="services" class="max-w-6xl mx-auto px-6 py-20 border-t border-gray-100 dark:border-gray-900">
         <div class="text-center mb-12">
             <span
-                class="mono-font text-xs text-emerald-600 dark:text-emerald-400 font-semibold tracking-wider uppercase bg-emerald-50 dark:bg-emerald-950 px-3 py-1 rounded-full inline-block mb-3">//
+                class="mono-font text-xs text-gray-500 dark:text-gray-300 tracking-wider uppercase inline-block mb-2">
                 professional offerings</span>
             <h2 class="serif-heading text-3xl sm:text-4xl font-normal text-gray-900 dark:text-white">My Services</h2>
             <p class="text-gray-500 dark:text-gray-400 text-sm mt-2 max-w-xl mx-auto">Specialized engineering services
@@ -872,6 +898,8 @@
 
     <!-- Education Section -->
     <section id="education" class="max-w-6xl mx-auto px-6 py-20 border-t border-gray-100 dark:border-gray-900">
+        <span
+            class="mono-font text-xs text-gray-500 dark:text-gray-300 tracking-wider uppercase inline-block mb-2">academic background</span>
         <h2 class="serif-heading text-3xl sm:text-4xl font-normal text-gray-900 dark:text-white mb-12">Education</h2>
 
         <div
@@ -893,15 +921,15 @@
                 Lahore and participant in industrial visits (Tarbela Dam, 220 kV Grid Station NGC).
             </p>
         </div>
+        <div class="max-w-6xl mx-auto mt-20 px-6 text-center">
+            <button onclick="toggleSoftwareKnowledge()" id="showSoftwareBtn"
+                class="bg-white hover:bg-black dark:bg-gray-900 dark:hover:bg-white dark:text-white text-gray-900 hover:text-white dark:hover:text-black border border-gray-300 dark:border-gray-700 px-6 py-3 rounded-full text-xs font-semibold transition shadow-sm inline-flex items-center space-x-2 transition-colors duration-300 ease-in">
+                <span>Click to see software knowledge</span>
+            </button>
+        </div>
     </section>
 
     <!-- Centered Toggle Button for Software Knowledge & Engineering Tools -->
-    <div class="max-w-6xl mx-auto px-6 pb-6 text-center">
-        <button onclick="toggleSoftwareKnowledge()" id="showSoftwareBtn"
-            class="bg-white hover:bg-black dark:bg-gray-900 dark:hover:bg-white text-gray-900 hover:text-white dark:text-white dark:hover:text-black border border-gray-300 dark:border-gray-700 px-6 py-3 rounded-full text-xs font-semibold transition shadow-sm inline-flex items-center space-x-2">
-            <span>Click to see software knowledge</span>
-        </button>
-    </div>
 
     <!-- Hidden Software Knowledge & Tools Section -->
     <section id="software-knowledge"
@@ -946,6 +974,8 @@
 
     <!-- Contact Section -->
     <section id="contact" class="max-w-6xl mx-auto px-6 py-20 border-t border-gray-100 dark:border-gray-900">
+        <span
+            class="mono-font text-xs text-gray-500 dark:text-gray-300 tracking-wider uppercase inline-block mb-2">let's connect</span>
         <h2 class="serif-heading text-3xl sm:text-4xl font-normal text-gray-900 dark:text-white mb-12">Get in Touch</h2>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -1122,6 +1152,7 @@
                     Systems</p>
             </div>
             <a href="#contact"
+                onclick="closePopup()"
                 class="block w-full bg-black hover:bg-gray-800 dark:bg-white dark:hover:bg-gray-200 text-white dark:text-black text-center mono-font text-xs font-semibold py-2.5 rounded-xl transition shadow-sm">
                 Let's Talk &rarr;
             </a>
@@ -1167,7 +1198,7 @@
             if (softwareSection.classList.contains('hidden')) {
                 softwareSection.classList.remove('hidden');
                 btn.innerHTML = '<span>Click to hide software knowledge</span>';
-                btn.classList.add('bg-black', 'dark:bg-white', 'text-white', 'dark:text-black');
+                btn.classList.add('bg-black', 'dark:bg-white', 'text-white', 'dark:text-black hover:text-black');
                 softwareSection.scrollIntoView({ behavior: 'smooth' });
             } else {
                 softwareSection.classList.add('hidden');
@@ -1175,6 +1206,76 @@
                 btn.classList.remove('bg-black', 'dark:bg-white', 'text-white', 'dark:text-black');
             }
         }
+
+        // Projects toggle: show first 3 by default, reveal/hide the rest.
+        function setupProjectsToggle() {
+            const projectsList = document.getElementById('projectsList');
+            const toggleBtn = document.getElementById('projectsToggleBtn');
+
+            if (!projectsList || !toggleBtn) {
+                return;
+            }
+
+            const projectItems = Array.from(projectsList.querySelectorAll(':scope > .grid.items-center'));
+            const visibleCount = 3;
+
+            if (projectItems.length <= visibleCount) {
+                toggleBtn.classList.add('hidden');
+                return;
+            }
+
+            let expanded = false;
+
+            const renderProjects = () => {
+                projectItems.forEach((item, index) => {
+                    if (expanded || index < visibleCount) {
+                        item.classList.remove('hidden');
+                    } else {
+                        item.classList.add('hidden');
+                    }
+                });
+
+                toggleBtn.textContent = expanded ? 'Show Less Projects' : 'Load More Projects';
+            };
+
+            toggleBtn.addEventListener('click', () => {
+                expanded = !expanded;
+                renderProjects();
+
+                if (!expanded) {
+                    document.getElementById('projects').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+
+            renderProjects();
+        }
+
+        // Header scroll state: transparent at top, solid/blurred background after scroll starts.
+        function setupHeaderScrollState() {
+            const header = document.getElementById('siteHeader');
+
+            if (!header) {
+                return;
+            }
+
+            const updateHeaderState = () => {
+                const isScrolled = window.scrollY > 0;
+
+                if (isScrolled) {
+                    header.classList.add('bg-white/80', 'dark:bg-gray-950/80', 'backdrop-blur-md', 'border-b', 'border-gray-100', 'dark:border-gray-800');
+                    header.classList.remove('bg-transparent', 'border-transparent');
+                } else {
+                    header.classList.remove('bg-white/80', 'dark:bg-gray-950/80', 'backdrop-blur-md', 'border-b', 'border-gray-100', 'dark:border-gray-800');
+                    header.classList.add('bg-transparent', 'border-transparent');
+                }
+            };
+
+            window.addEventListener('scroll', updateHeaderState, { passive: true });
+            updateHeaderState();
+        }
+
+        setupProjectsToggle();
+        setupHeaderScrollState();
     </script>
 
     <!-- External JavaScript Link -->

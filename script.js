@@ -3,7 +3,7 @@ function closePopup() {
     const popup = document.getElementById('devPopup');
     if (popup) {
         popup.style.opacity = '0';
-        setTimeout(() => popup.style.display = 'none', 300);
+        setTimeout(() => popup.style.display = 'none', 500);
     }
 }
 
